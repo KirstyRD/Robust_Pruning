@@ -1,0 +1,5 @@
+epoch, neuron_units, loss, dl2_loss, top1, top5, dl2_p_acc, dl2_constraint_acc
+Traceback (most recent call last):
+  File "remove_header.py", line 3, in <module>
+    lines = open(sys.argv[1], 'r').readlines()
+FileNotFoundError: [Errno 2] No such file or directory: '../cuda/log_CIFAR100_resnet50_100_100_0.1_RobustnessDandR_eps1=7.8,_eps2=2.9__FGSM.txt'

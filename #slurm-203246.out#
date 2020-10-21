@@ -1,0 +1,48 @@
+BTraceback (most recent call last):
+  File "main_6epsilons.py", line 1172, in <module>
+    main()
+  File "main_6epsilons.py", line 1140, in main
+    num_left, new_iter = train(args, model, device, train_loader, optimizer, epoch, criterion, oracle, test_loader_constr, test_loader_adv, print_iter, train_writer=train_writer, pruning_engine=pruning_engine)
+  File "main_6epsilons.py", line 99, in train
+    output = model(data)
+  File "/home/kduncan/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 541, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/kduncan/Pruning/models/lenet.py", line 35, in forward
+    out = F.relu(self.conv1(x))
+  File "/home/kduncan/.local/lib/python3.6/site-packages/torch/nn/functional.py", line 914, in relu
+    result = torch.relu(input)
+RuntimeError: CUDA error: no kernel image is available for execution on the device
+Ignoring network_output argument, using prob and logprob to obtain KL divergence
+skipping parameter gate1.weight shape: torch.Size([16])
+skipping parameter gate2.weight shape: torch.Size([32])
+skipping parameter gate3.weight shape: torch.Size([120])
+skipping parameter gate4.weight shape: torch.Size([84])
+MNIST_lenet3_1_30_0.2_RobustnessDandR_eps1=7.8,_eps2=2.9__FGSM
+main_6epsilons.py --dataset=MNIST --model=lenet3 --pruning=True --tensorboard=True --log-interval=30 --pruning_config=./configs/MNIST_1_30.json --constraint=RobustnessDandR(eps1=7.8, eps2=2.9) --print-after-epoch=0 --dl2-weight=0.2 --delay=0 --epochs=10 --adv-after-epoch=0
+pruning_engine.load_mask(): did not find mask file, will load nothing
+=> loading checkpoint './models/pretrained/model.pth'
+conv1.weight torch.Size([16, 1, 5, 5])
+conv1.bias torch.Size([16])
+gate1.weight torch.Size([16])
+conv2.weight torch.Size([32, 16, 5, 5])
+conv2.bias torch.Size([32])
+gate2.weight torch.Size([32])
+fc1.weight torch.Size([120, 512])
+fc1.bias torch.Size([120])
+gate3.weight torch.Size([120])
+fc2.weight torch.Size([84, 120])
+fc2.bias torch.Size([84])
+*********
+conv1.weight torch.Size([16, 1, 5, 5])
+conv1.bias torch.Size([16])
+gate1.weight torch.Size([16])
+conv2.weight torch.Size([32, 16, 5, 5])
+conv2.bias torch.Size([32])
+gate2.weight torch.Size([32])
+fc1.weight torch.Size([120, 512])
+fc1.bias torch.Size([120])
+gate3.weight torch.Size([120])
+fc2.weight torch.Size([84, 120])
+fc2.bias torch.Size([84])
+=> loaded checkpoint './models/pretrained/model.pth' (epoch -1)
+epoch, neuron_units, loss, dl2_loss, top1, top5, dl2_p_acc, dl2_constraint_acc

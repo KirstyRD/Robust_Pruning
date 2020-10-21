@@ -1,0 +1,631 @@
+pruning_engine.load_mask(): did not find mask file, will load nothing
+[0] Train acc: 0.1406
+[15] Train acc: 0.1875
+[30] Train acc: 0.3125
+[45] Train acc: 0.3594
+[60] Train acc: 0.5625
+[75] Train acc: 0.6719
+[90] Train acc: 0.6250
+[105] Train acc: 0.7031
+[120] Train acc: 0.8125
+[135] Train acc: 0.8594
+[150] Train acc: 0.8594
+[165] Train acc: 0.8281
+[180] Train acc: 0.9062
+[195] Train acc: 0.9062
+[210] Train acc: 0.9219
+[225] Train acc: 0.8750
+[240] Train acc: 0.8750
+[255] Train acc: 0.8281
+[270] Train acc: 0.9219
+[285] Train acc: 0.9375
+[300] Train acc: 0.9062
+[315] Train acc: 0.9219
+[330] Train acc: 0.9062
+[345] Train acc: 0.8594
+[360] Train acc: 0.8750
+[375] Train acc: 0.9375
+[390] Train acc: 0.9062
+[405] Train acc: 0.9375
+[420] Train acc: 0.9219
+[435] Train acc: 0.9219
+[450] Train acc: 0.9219
+[465] Train acc: 0.8906
+[480] Train acc: 1.0000
+[495] Train acc: 0.9531
+[510] Train acc: 0.9219
+[525] Train acc: 0.9531
+[540] Train acc: 0.9531
+[555] Train acc: 0.9688
+[570] Train acc: 0.9531
+[585] Train acc: 0.9844
+[600] Train acc: 0.9531
+[615] Train acc: 0.9531
+[630] Train acc: 0.9375
+[645] Train acc: 0.9688
+[660] Train acc: 0.9688
+[675] Train acc: 0.9375
+[690] Train acc: 0.9688
+[705] Train acc: 0.8906
+[720] Train acc: 1.0000
+[735] Train acc: 0.9375
+[750] Train acc: 0.9688
+[765] Train acc: 0.9062
+[780] Train acc: 0.9219
+[795] Train acc: 0.9375
+[810] Train acc: 1.0000
+[825] Train acc: 0.9531
+[840] Train acc: 0.9531
+[855] Train acc: 0.9375
+[870] Train acc: 0.9531
+[885] Train acc: 0.9375
+[900] Train acc: 0.9531
+[915] Train acc: 0.9375
+[930] Train acc: 0.9375
+[0] Train acc: 0.9531
+[15] Train acc: 0.9844
+[30] Train acc: 0.9688
+[45] Train acc: 0.9688
+[60] Train acc: 0.9844
+[75] Train acc: 0.9688
+[90] Train acc: 0.9375
+[105] Train acc: 0.9844
+[120] Train acc: 0.9688
+[135] Train acc: 0.9688
+[150] Train acc: 0.9531
+[165] Train acc: 0.9844
+[180] Train acc: 0.9531
+[195] Train acc: 0.9844
+[210] Train acc: 0.9688
+[225] Train acc: 0.9531
+[240] Train acc: 0.9531
+[255] Train acc: 1.0000
+[270] Train acc: 0.9844
+[285] Train acc: 0.9844
+[300] Train acc: 0.9688
+[315] Train acc: 0.9375
+[330] Train acc: 0.9688
+[345] Train acc: 0.9531
+[360] Train acc: 0.9688
+[375] Train acc: 0.9531
+[390] Train acc: 0.9844
+[405] Train acc: 0.9844
+[420] Train acc: 0.9844
+[435] Train acc: 0.9844
+[450] Train acc: 0.9844
+[465] Train acc: 0.9688
+[480] Train acc: 0.9688
+[495] Train acc: 0.9375
+[510] Train acc: 1.0000
+[525] Train acc: 0.9688
+[540] Train acc: 0.9844
+[555] Train acc: 1.0000
+[570] Train acc: 0.9531
+[585] Train acc: 1.0000
+[600] Train acc: 0.9531
+[615] Train acc: 0.9531
+[630] Train acc: 0.9844
+[645] Train acc: 0.9062
+[660] Train acc: 0.9844
+[675] Train acc: 0.9844
+[690] Train acc: 0.9688
+[705] Train acc: 0.9844
+[720] Train acc: 0.9688
+[735] Train acc: 0.9844
+[750] Train acc: 0.9844
+[765] Train acc: 0.9688
+[780] Train acc: 0.9844
+[795] Train acc: 0.9688
+[810] Train acc: 0.9688
+[825] Train acc: 0.9375
+[840] Train acc: 1.0000
+[855] Train acc: 1.0000
+[870] Train acc: 1.0000
+[885] Train acc: 0.9844
+[900] Train acc: 0.9375
+[915] Train acc: 0.9688
+[930] Train acc: 0.9688
+[0] Train acc: 0.9688
+[15] Train acc: 1.0000
+[30] Train acc: 0.9844
+[45] Train acc: 0.9688
+[60] Train acc: 1.0000
+[75] Train acc: 0.9688
+[90] Train acc: 0.9844
+[105] Train acc: 1.0000
+[120] Train acc: 1.0000
+[135] Train acc: 0.9531
+[150] Train acc: 1.0000
+[165] Train acc: 0.9844
+[180] Train acc: 0.9531
+[195] Train acc: 0.9844
+[210] Train acc: 0.9531
+[225] Train acc: 1.0000
+[240] Train acc: 0.9688
+[255] Train acc: 0.9844
+[270] Train acc: 0.9688
+[285] Train acc: 0.9688
+[300] Train acc: 0.9844
+[315] Train acc: 0.9688
+[330] Train acc: 0.9531
+[345] Train acc: 1.0000
+[360] Train acc: 0.9844
+[375] Train acc: 1.0000
+[390] Train acc: 0.9375
+[405] Train acc: 0.9844
+[420] Train acc: 1.0000
+[435] Train acc: 0.9844
+[450] Train acc: 0.9844
+[465] Train acc: 1.0000
+[480] Train acc: 0.9844
+[495] Train acc: 0.9688
+[510] Train acc: 0.9688
+[525] Train acc: 0.9531
+[540] Train acc: 1.0000
+[555] Train acc: 0.9531
+[570] Train acc: 0.9844
+[585] Train acc: 1.0000
+[600] Train acc: 0.9375
+[615] Train acc: 0.9531
+[630] Train acc: 1.0000
+[645] Train acc: 0.9688
+[660] Train acc: 1.0000
+[675] Train acc: 1.0000
+[690] Train acc: 0.9844
+[705] Train acc: 1.0000
+[720] Train acc: 0.9844
+[735] Train acc: 0.9844
+[750] Train acc: 0.9844
+[765] Train acc: 1.0000
+[780] Train acc: 0.9531
+[795] Train acc: 0.9688
+[810] Train acc: 1.0000
+[825] Train acc: 1.0000
+[840] Train acc: 0.9531
+[855] Train acc: 1.0000
+[870] Train acc: 1.0000
+[885] Train acc: 1.0000
+[900] Train acc: 0.9844
+[915] Train acc: 0.9531
+[930] Train acc: 0.9844
+[0] Train acc: 0.9844
+[15] Train acc: 1.0000
+[30] Train acc: 0.9844
+[45] Train acc: 1.0000
+[60] Train acc: 1.0000
+[75] Train acc: 1.0000
+[90] Train acc: 0.9844
+[105] Train acc: 1.0000
+[120] Train acc: 0.9844
+[135] Train acc: 0.9844
+[150] Train acc: 0.9688
+[165] Train acc: 1.0000
+[180] Train acc: 0.9844
+[195] Train acc: 1.0000
+[210] Train acc: 0.9531
+[225] Train acc: 1.0000
+[240] Train acc: 1.0000
+[255] Train acc: 0.9844
+[270] Train acc: 1.0000
+[285] Train acc: 0.9688
+[300] Train acc: 1.0000
+[315] Train acc: 1.0000
+[330] Train acc: 1.0000
+[345] Train acc: 0.9531
+[360] Train acc: 0.9688
+[375] Train acc: 1.0000
+[390] Train acc: 1.0000
+[405] Train acc: 1.0000
+[420] Train acc: 0.9688
+[435] Train acc: 0.9688
+[450] Train acc: 1.0000
+[465] Train acc: 0.9844
+[480] Train acc: 0.9688
+[495] Train acc: 0.9844
+[510] Train acc: 0.9531
+[525] Train acc: 1.0000
+[540] Train acc: 1.0000
+[555] Train acc: 0.9844
+[570] Train acc: 1.0000
+[585] Train acc: 0.9531
+[600] Train acc: 1.0000
+[615] Train acc: 0.9844
+[630] Train acc: 0.9531
+[645] Train acc: 1.0000
+[660] Train acc: 1.0000
+[675] Train acc: 0.9688
+[690] Train acc: 0.9844
+[705] Train acc: 1.0000
+[720] Train acc: 0.9844
+[735] Train acc: 1.0000
+[750] Train acc: 1.0000
+[765] Train acc: 0.9531
+[780] Train acc: 0.9688
+[795] Train acc: 0.9531
+[810] Train acc: 1.0000
+[825] Train acc: 0.9688
+[840] Train acc: 1.0000
+[855] Train acc: 1.0000
+[870] Train acc: 0.9844
+[885] Train acc: 1.0000
+[900] Train acc: 0.9844
+[915] Train acc: 1.0000
+[930] Train acc: 0.9688
+[0] Train acc: 0.9531
+[15] Train acc: 0.9844
+[30] Train acc: 1.0000
+[45] Train acc: 0.9531
+[60] Train acc: 1.0000
+[75] Train acc: 0.9844
+[90] Train acc: 0.9531
+[105] Train acc: 0.9844
+[120] Train acc: 1.0000
+[135] Train acc: 0.9844
+[150] Train acc: 1.0000
+[165] Train acc: 0.9844
+[180] Train acc: 0.9844
+[195] Train acc: 1.0000
+[210] Train acc: 0.9688
+[225] Train acc: 0.9688
+[240] Train acc: 0.9844
+[255] Train acc: 0.9844
+[270] Train acc: 1.0000
+[285] Train acc: 0.9844
+[300] Train acc: 0.9688
+[315] Train acc: 0.9688
+[330] Train acc: 0.9844
+[345] Train acc: 1.0000
+[360] Train acc: 1.0000
+[375] Train acc: 1.0000
+[390] Train acc: 0.9844
+[405] Train acc: 0.9844
+[420] Train acc: 0.9844
+[435] Train acc: 1.0000
+[450] Train acc: 0.9688
+[465] Train acc: 0.9531
+[480] Train acc: 1.0000
+[495] Train acc: 0.9688
+[510] Train acc: 0.9531
+[525] Train acc: 0.9688
+[540] Train acc: 0.9688
+[555] Train acc: 0.9844
+[570] Train acc: 1.0000
+[585] Train acc: 1.0000
+[600] Train acc: 1.0000
+[615] Train acc: 0.9844
+[630] Train acc: 0.9219
+[645] Train acc: 1.0000
+[660] Train acc: 1.0000
+[675] Train acc: 1.0000
+[690] Train acc: 1.0000
+[705] Train acc: 1.0000
+[720] Train acc: 0.9844
+[735] Train acc: 0.9844
+[750] Train acc: 1.0000
+[765] Train acc: 1.0000
+[780] Train acc: 0.9531
+[795] Train acc: 0.9688
+[810] Train acc: 0.9844
+[825] Train acc: 1.0000
+[840] Train acc: 0.9844
+[855] Train acc: 1.0000
+[870] Train acc: 0.9688
+[885] Train acc: 1.0000
+[900] Train acc: 1.0000
+[915] Train acc: 0.9844
+[930] Train acc: 0.9844
+[0] Train acc: 1.0000
+[15] Train acc: 1.0000
+[30] Train acc: 0.9844
+[45] Train acc: 1.0000
+[60] Train acc: 1.0000
+[75] Train acc: 1.0000
+[90] Train acc: 1.0000
+[105] Train acc: 0.9688
+[120] Train acc: 0.9844
+[135] Train acc: 1.0000
+[150] Train acc: 1.0000
+[165] Train acc: 1.0000
+[180] Train acc: 1.0000
+[195] Train acc: 0.9688
+[210] Train acc: 0.9844
+[225] Train acc: 0.9688
+[240] Train acc: 1.0000
+[255] Train acc: 0.9844
+[270] Train acc: 1.0000
+[285] Train acc: 0.9688
+[300] Train acc: 0.9844
+[315] Train acc: 1.0000
+[330] Train acc: 0.9844
+[345] Train acc: 0.9688
+[360] Train acc: 0.9844
+[375] Train acc: 0.9844
+[390] Train acc: 0.9844
+[405] Train acc: 1.0000
+[420] Train acc: 1.0000
+[435] Train acc: 1.0000
+[450] Train acc: 1.0000
+[465] Train acc: 0.9844
+[480] Train acc: 1.0000
+[495] Train acc: 1.0000
+[510] Train acc: 0.9688
+[525] Train acc: 0.9688
+[540] Train acc: 0.9844
+[555] Train acc: 1.0000
+[570] Train acc: 0.9688
+[585] Train acc: 0.9844
+[600] Train acc: 1.0000
+[615] Train acc: 1.0000
+[630] Train acc: 0.9844
+[645] Train acc: 1.0000
+[660] Train acc: 1.0000
+[675] Train acc: 1.0000
+[690] Train acc: 1.0000
+[705] Train acc: 1.0000
+[720] Train acc: 0.9844
+[735] Train acc: 0.9844
+[750] Train acc: 0.9844
+[765] Train acc: 1.0000
+[780] Train acc: 1.0000
+[795] Train acc: 0.9844
+[810] Train acc: 1.0000
+[825] Train acc: 0.9688
+[840] Train acc: 0.9844
+[855] Train acc: 1.0000
+[870] Train acc: 1.0000
+[885] Train acc: 0.9688
+[900] Train acc: 1.0000
+[915] Train acc: 1.0000
+[930] Train acc: 1.0000
+[0] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.005, DL2 loss: 0.214
+[15] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.007, DL2 loss: 0.455
+[30] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.007, DL2 loss: 0.317
+[45] Train acc: 0.9688, Constr acc: 0.0000, CE loss: 0.044, DL2 loss: 0.241
+[60] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.002, DL2 loss: 0.415
+[75] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.046, DL2 loss: 0.545
+[90] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.004, DL2 loss: 0.468
+[105] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.007, DL2 loss: 0.348
+[120] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.007, DL2 loss: 0.271
+[135] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.001, DL2 loss: 0.545
+[150] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.006, DL2 loss: 0.520
+[165] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.001, DL2 loss: 0.354
+[180] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.036, DL2 loss: 0.185
+[195] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.033, DL2 loss: 0.584
+[210] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.004, DL2 loss: 0.403
+[225] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.009, DL2 loss: 0.382
+[240] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.008, DL2 loss: 0.307
+[255] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.003, DL2 loss: 0.044
+[270] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.017, DL2 loss: 0.638
+[285] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.015, DL2 loss: 0.278
+[300] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.013, DL2 loss: 0.297
+[315] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.015, DL2 loss: 0.571
+[330] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.004, DL2 loss: 0.393
+[345] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.049, DL2 loss: 0.319
+[360] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.006, DL2 loss: 0.376
+[375] Train acc: 0.9688, Constr acc: 0.0000, CE loss: 0.081, DL2 loss: 0.768
+[390] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.015, DL2 loss: 0.446
+[405] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.074, DL2 loss: 0.507
+[420] Train acc: 0.9688, Constr acc: 0.0000, CE loss: 0.046, DL2 loss: 0.080
+[435] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.035, DL2 loss: 0.426
+[450] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.009, DL2 loss: 0.056
+[465] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.007, DL2 loss: 0.533
+[480] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.062, DL2 loss: 0.529
+[495] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.002, DL2 loss: 0.610
+[510] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.008, DL2 loss: 0.293
+[525] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.026, DL2 loss: 0.330
+[540] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.002, DL2 loss: 0.288
+[555] Train acc: 0.9531, Constr acc: 0.0000, CE loss: 0.070, DL2 loss: 0.218
+[570] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.012, DL2 loss: 0.605
+[585] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.059, DL2 loss: 0.484
+[600] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.003, DL2 loss: 0.119
+[615] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.006, DL2 loss: 0.470
+[630] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.045, DL2 loss: 0.724
+[645] Train acc: 0.9531, Constr acc: 1.0000, CE loss: 0.107, DL2 loss: 0.000
+[660] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.003, DL2 loss: 0.607
+[675] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.014, DL2 loss: 0.504
+[690] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.007, DL2 loss: 0.252
+[705] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.006, DL2 loss: 0.506
+[720] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.020, DL2 loss: 0.338
+[735] Train acc: 0.9688, Constr acc: 0.0000, CE loss: 0.053, DL2 loss: 0.301
+[750] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.005, DL2 loss: 0.453
+[765] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.023, DL2 loss: 0.249
+[780] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.009, DL2 loss: 0.583
+[795] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.008, DL2 loss: 0.386
+[810] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.025, DL2 loss: 0.545
+[825] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.028, DL2 loss: 0.366
+[840] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.013, DL2 loss: 0.459
+[855] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.006, DL2 loss: 0.384
+[870] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.005, DL2 loss: 0.514
+[885] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.033, DL2 loss: 0.680
+[900] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.024, DL2 loss: 0.058
+[915] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.061, DL2 loss: 0.416
+[930] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.070, DL2 loss: 0.226
+[0] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.006, DL2 loss: 0.604
+[15] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.010, DL2 loss: 0.642
+[30] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.017, DL2 loss: 0.318
+[45] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.008, DL2 loss: 0.458
+[60] Train acc: 0.9688, Constr acc: 0.0000, CE loss: 0.130, DL2 loss: 0.145
+[75] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.003, DL2 loss: 0.169
+[90] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.024, DL2 loss: 0.512
+[105] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.018, DL2 loss: 0.297
+[120] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.039, DL2 loss: 0.471
+[135] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.004, DL2 loss: 0.464
+[150] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.037, DL2 loss: 0.246
+[165] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.018, DL2 loss: 0.308
+[180] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.004, DL2 loss: 0.552
+[195] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.022, DL2 loss: 0.407
+[210] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.009, DL2 loss: 0.250
+[225] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.002, DL2 loss: 0.394
+[240] Train acc: 0.9688, Constr acc: 0.0000, CE loss: 0.040, DL2 loss: 0.472
+[255] Train acc: 0.9688, Constr acc: 0.0000, CE loss: 0.057, DL2 loss: 0.307
+[270] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.039, DL2 loss: 0.734
+[285] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.037, DL2 loss: 0.135
+[300] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.023, DL2 loss: 0.450
+[315] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.040, DL2 loss: 0.570
+[330] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.006, DL2 loss: 0.199
+[345] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.011, DL2 loss: 0.339
+[360] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.176, DL2 loss: 0.384
+[375] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.038, DL2 loss: 0.865
+[390] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.003, DL2 loss: 0.156
+[405] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.007, DL2 loss: 0.459
+[420] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.006, DL2 loss: 0.286
+[435] Train acc: 0.9688, Constr acc: 0.0000, CE loss: 0.137, DL2 loss: 0.239
+[450] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.022, DL2 loss: 0.590
+[465] Train acc: 0.9531, Constr acc: 0.0000, CE loss: 0.127, DL2 loss: 0.363
+[480] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.005, DL2 loss: 0.327
+[495] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.009, DL2 loss: 0.226
+[510] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.002, DL2 loss: 0.491
+[525] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.028, DL2 loss: 0.443
+[540] Train acc: 0.9688, Constr acc: 0.0000, CE loss: 0.073, DL2 loss: 0.142
+[555] Train acc: 0.9688, Constr acc: 0.0000, CE loss: 0.065, DL2 loss: 0.430
+[570] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.006, DL2 loss: 0.651
+[585] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.005, DL2 loss: 0.150
+[600] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.058, DL2 loss: 0.213
+[615] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.048, DL2 loss: 0.206
+[630] Train acc: 0.9688, Constr acc: 0.0000, CE loss: 0.039, DL2 loss: 0.633
+[645] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.023, DL2 loss: 0.323
+[660] Train acc: 0.9688, Constr acc: 0.0000, CE loss: 0.075, DL2 loss: 0.463
+[675] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.022, DL2 loss: 0.462
+[690] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.019, DL2 loss: 0.329
+[705] Train acc: 0.9688, Constr acc: 0.0000, CE loss: 0.147, DL2 loss: 0.221
+[720] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.021, DL2 loss: 0.087
+[735] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.026, DL2 loss: 0.258
+[750] Train acc: 0.9688, Constr acc: 0.0000, CE loss: 0.093, DL2 loss: 0.392
+[765] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.033, DL2 loss: 0.333
+[780] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.030, DL2 loss: 0.372
+[795] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.016, DL2 loss: 0.577
+[810] Train acc: 0.9688, Constr acc: 0.0000, CE loss: 0.076, DL2 loss: 0.607
+[825] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.067, DL2 loss: 0.366
+[840] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.017, DL2 loss: 0.296
+[855] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.024, DL2 loss: 0.545
+[870] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.028, DL2 loss: 0.393
+[885] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.019, DL2 loss: 0.424
+[900] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.076, DL2 loss: 0.096
+[915] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.036, DL2 loss: 0.411
+[930] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.009, DL2 loss: 0.175
+[0] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.045, DL2 loss: 0.598
+[15] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.019, DL2 loss: 0.295
+[30] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.010, DL2 loss: 0.347
+[45] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.039, DL2 loss: 0.352
+[60] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.017, DL2 loss: 0.723
+[75] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.013, DL2 loss: 0.588
+[90] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.039, DL2 loss: 0.193
+[105] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.013, DL2 loss: 0.330
+[120] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.018, DL2 loss: 0.286
+[135] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.046, DL2 loss: 0.182
+[150] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.024, DL2 loss: 0.304
+[165] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.018, DL2 loss: 0.522
+[180] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.036, DL2 loss: 0.166
+[195] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.031, DL2 loss: 0.345
+[210] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.027, DL2 loss: 0.468
+[225] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.029, DL2 loss: 0.475
+[240] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.027, DL2 loss: 0.549
+[255] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.020, DL2 loss: 0.384
+[270] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.139, DL2 loss: 0.212
+[285] Train acc: 0.9688, Constr acc: 0.0000, CE loss: 0.061, DL2 loss: 0.476
+[300] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.028, DL2 loss: 0.416
+[315] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.076, DL2 loss: 0.351
+[330] Train acc: 0.9688, Constr acc: 0.0000, CE loss: 0.080, DL2 loss: 0.565
+[345] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.020, DL2 loss: 0.310
+[360] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.043, DL2 loss: 0.130
+[375] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.017, DL2 loss: 0.213
+[390] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.072, DL2 loss: 0.542
+[405] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.016, DL2 loss: 0.398
+[420] Train acc: 0.9688, Constr acc: 0.0000, CE loss: 0.051, DL2 loss: 0.534
+[435] Train acc: 0.9688, Constr acc: 0.0000, CE loss: 0.067, DL2 loss: 0.597
+[450] Train acc: 0.9688, Constr acc: 0.0000, CE loss: 0.077, DL2 loss: 0.103
+[465] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.054, DL2 loss: 0.348
+[480] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.049, DL2 loss: 0.215
+[495] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.012, DL2 loss: 0.195
+[510] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.042, DL2 loss: 0.461
+[525] Train acc: 0.9219, Constr acc: 0.0000, CE loss: 0.150, DL2 loss: 0.519
+[540] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.046, DL2 loss: 0.495
+[555] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.053, DL2 loss: 0.326
+[570] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.025, DL2 loss: 0.548
+[585] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.018, DL2 loss: 0.436
+[600] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.029, DL2 loss: 0.429
+[615] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.034, DL2 loss: 0.401
+[630] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.024, DL2 loss: 0.300
+[645] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.035, DL2 loss: 0.966
+[660] Train acc: 0.9531, Constr acc: 0.0000, CE loss: 0.119, DL2 loss: 0.593
+[675] Train acc: 0.9219, Constr acc: 0.0000, CE loss: 0.175, DL2 loss: 0.307
+[690] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.022, DL2 loss: 0.367
+[705] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.031, DL2 loss: 0.751
+[720] Train acc: 0.9688, Constr acc: 0.0000, CE loss: 0.102, DL2 loss: 0.273
+[735] Train acc: 0.9688, Constr acc: 0.0000, CE loss: 0.178, DL2 loss: 0.420
+[750] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.038, DL2 loss: 0.472
+[765] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.047, DL2 loss: 0.442
+[780] Train acc: 0.9531, Constr acc: 0.0000, CE loss: 0.083, DL2 loss: 0.587
+[795] Train acc: 0.9688, Constr acc: 0.0000, CE loss: 0.054, DL2 loss: 0.368
+[810] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.054, DL2 loss: 0.594
+[825] Train acc: 0.9531, Constr acc: 0.0000, CE loss: 0.095, DL2 loss: 0.442
+[840] Train acc: 0.9531, Constr acc: 0.0000, CE loss: 0.091, DL2 loss: 0.403
+[855] Train acc: 0.9375, Constr acc: 0.0000, CE loss: 0.249, DL2 loss: 0.386
+[870] Train acc: 0.9531, Constr acc: 0.0000, CE loss: 0.195, DL2 loss: 0.357
+[885] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.059, DL2 loss: 0.476
+[900] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.040, DL2 loss: 0.840
+[915] Train acc: 0.9688, Constr acc: 0.0000, CE loss: 0.053, DL2 loss: 0.253
+[930] Train acc: 0.9688, Constr acc: 0.0000, CE loss: 0.057, DL2 loss: 0.408
+[0] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.046, DL2 loss: 0.206
+[15] Train acc: 0.9375, Constr acc: 0.0000, CE loss: 0.174, DL2 loss: 0.504
+[30] Train acc: 0.9688, Constr acc: 0.0000, CE loss: 0.045, DL2 loss: 0.239
+[45] Train acc: 0.9531, Constr acc: 0.0000, CE loss: 0.094, DL2 loss: 0.296
+[60] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.058, DL2 loss: 0.072
+[75] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.081, DL2 loss: 0.492
+[90] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.050, DL2 loss: 0.468
+[105] Train acc: 0.9688, Constr acc: 1.0000, CE loss: 0.062, DL2 loss: 0.000
+[120] Train acc: 0.9688, Constr acc: 0.0000, CE loss: 0.051, DL2 loss: 0.330
+[135] Train acc: 0.9531, Constr acc: 0.0000, CE loss: 0.097, DL2 loss: 0.072
+[150] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.090, DL2 loss: 0.178
+[165] Train acc: 0.9688, Constr acc: 0.0000, CE loss: 0.072, DL2 loss: 0.437
+[180] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.074, DL2 loss: 0.481
+[195] Train acc: 0.9688, Constr acc: 0.0000, CE loss: 0.087, DL2 loss: 0.317
+[210] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.041, DL2 loss: 0.453
+[225] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.037, DL2 loss: 0.352
+[240] Train acc: 0.9531, Constr acc: 0.0000, CE loss: 0.148, DL2 loss: 0.346
+[255] Train acc: 0.9531, Constr acc: 0.0000, CE loss: 0.109, DL2 loss: 0.413
+[270] Train acc: 0.9688, Constr acc: 0.0000, CE loss: 0.110, DL2 loss: 0.381
+[285] Train acc: 0.9688, Constr acc: 0.0000, CE loss: 0.118, DL2 loss: 0.424
+[300] Train acc: 0.9531, Constr acc: 0.0000, CE loss: 0.094, DL2 loss: 0.248
+[315] Train acc: 0.9688, Constr acc: 0.0000, CE loss: 0.098, DL2 loss: 0.252
+[330] Train acc: 0.9531, Constr acc: 0.0000, CE loss: 0.297, DL2 loss: 0.132
+[345] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.073, DL2 loss: 0.254
+[360] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.078, DL2 loss: 0.360
+[375] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.068, DL2 loss: 0.437
+[390] Train acc: 1.0000, Constr acc: 0.0000, CE loss: 0.042, DL2 loss: 0.301
+[405] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.063, DL2 loss: 0.352
+[420] Train acc: 0.9688, Constr acc: 0.0000, CE loss: 0.113, DL2 loss: 0.290
+[435] Train acc: 0.9688, Constr acc: 0.0000, CE loss: 0.171, DL2 loss: 0.492
+[450] Train acc: 0.9688, Constr acc: 0.0000, CE loss: 0.107, DL2 loss: 0.261
+[465] Train acc: 0.9375, Constr acc: 0.0000, CE loss: 0.145, DL2 loss: 0.442
+[480] Train acc: 0.9375, Constr acc: 0.0000, CE loss: 0.186, DL2 loss: 0.088
+[495] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.126, DL2 loss: 0.305
+[510] Train acc: 0.9844, Constr acc: 0.0000, CE loss: 0.123, DL2 loss: 0.476
+[525] Train acc: 0.9375, Constr acc: 0.0000, CE loss: 0.195, DL2 loss: 0.435
+[540] Train acc: 0.9531, Constr acc: 0.0000, CE loss: 0.229, DL2 loss: 0.245
+[555] Train acc: 0.8750, Constr acc: 0.0000, CE loss: 0.313, DL2 loss: 0.573
+[570] Train acc: 0.8594, Constr acc: 0.0000, CE loss: 0.401, DL2 loss: 0.232
+[585] Train acc: 0.9062, Constr acc: 0.0000, CE loss: 0.329, DL2 loss: 0.290
+[600] Train acc: 0.9062, Constr acc: 0.0000, CE loss: 0.219, DL2 loss: 0.386
+[615] Train acc: 0.8750, Constr acc: 0.0000, CE loss: 0.330, DL2 loss: 0.285
+[630] Train acc: 0.9375, Constr acc: 0.0000, CE loss: 0.223, DL2 loss: 0.219
+[645] Train acc: 0.8906, Constr acc: 0.0000, CE loss: 0.267, DL2 loss: 0.324
+[660] Train acc: 0.9062, Constr acc: 0.0000, CE loss: 0.407, DL2 loss: 0.836
+[675] Train acc: 0.9219, Constr acc: 0.0000, CE loss: 0.419, DL2 loss: 0.834
+[690] Train acc: 0.8125, Constr acc: 0.0000, CE loss: 0.554, DL2 loss: 0.789
+[705] Train acc: 0.8125, Constr acc: 0.0000, CE loss: 0.617, DL2 loss: 0.422
+[720] Train acc: 0.8750, Constr acc: 0.0000, CE loss: 0.444, DL2 loss: 0.124
+[735] Train acc: 0.8125, Constr acc: 0.0000, CE loss: 0.560, DL2 loss: 0.482
+[750] Train acc: 0.5625, Constr acc: 0.0000, CE loss: 1.118, DL2 loss: 0.811
+[765] Train acc: 0.2344, Constr acc: 0.0000, CE loss: 1.651, DL2 loss: 0.550
+[780] Train acc: 0.3438, Constr acc: 0.0000, CE loss: 1.738, DL2 loss: 0.484
+[795] Train acc: 0.3750, Constr acc: 0.0000, CE loss: 1.667, DL2 loss: 0.383
+[810] Train acc: 0.2812, Constr acc: 0.0000, CE loss: 1.856, DL2 loss: 0.765
+[825] Train acc: 0.2344, Constr acc: 0.0000, CE loss: 2.019, DL2 loss: 0.305
+[840] Train acc: 0.2500, Constr acc: 0.0000, CE loss: 1.884, DL2 loss: 0.454
+[855] Train acc: 0.1562, Constr acc: 0.0000, CE loss: 2.006, DL2 loss: 0.662
+[870] Train acc: 0.1406, Constr acc: 0.0000, CE loss: 2.060, DL2 loss: 0.770
+[885] Train acc: 0.1719, Constr acc: 0.0000, CE loss: 1.990, DL2 loss: 0.603
+[900] Train acc: 0.1875, Constr acc: 0.0000, CE loss: 2.142, DL2 loss: 0.576
+[915] Train acc: 0.1562, Constr acc: 0.0000, CE loss: 2.116, DL2 loss: 0.909
+[930] Train acc: 0.0781, Constr acc: 0.0000, CE loss: nan, DL2 loss: nan

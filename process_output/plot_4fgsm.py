@@ -1,0 +1,46 @@
+import matplotlib.pyplot as plt
+import sys
+
+file_in1 = sys.argv[1]
+file_in2 = sys.argv[2]
+file_out = sys.argv[3]
+
+import csv
+
+x1 = []
+x2 = []
+y1 = []
+y2 = []
+y3 = []
+y4 = []
+
+
+with open(file_in1,'r') as csvfile:
+    plots = csv.reader(csvfile, delimiter=',')
+    headers = next(plots)
+    for row in plots:
+        x1.append(float(row[1]))
+        y1.append(100*float(row[6]))
+        y2.append(100*float(row[8]))#*float(row[6]))
+
+
+with open(file_in2,'r') as csvfile:
+    plots = csv.reader(csvfile, delimiter=',')
+    headers = next(plots)
+    for row in plots:
+        x2.append(float(row[1]))
+        y3.append(100*float(row[6]))
+        y4.append(100*float(row[10]))#*float(row[6]))
+
+
+        
+plt.plot(x1,y1, label='Accuracy dl2=0')
+plt.plot(x1,y2, label='FGSM Acc dl2=0')
+plt.plot(x2,y3, label='Accuracy dl2=0.2')
+plt.plot(x2,y4, label='FGSM Acc dl2=0.2')
+plt.xlabel('Number of Neurons')
+plt.ylabel('Accuracy')
+plt.title(sys.argv[4])
+plt.legend()
+plt.show()
+plt.savefig(file_out)

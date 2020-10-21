@@ -1,0 +1,37 @@
+main_6epsilons.py --dataset=CIFAR100 --model=resnet50 --pruning=True --tensorboard=True --log-interval=100 --pruning_config=./configs/CIFAR100_100_100.json --constraint=RobustnessDandR(eps1=7.8, eps2=2.9) --print-after-epoch=0 --dl2-weight=0.05 --delay=0 --epochs=100 --adv-after-epoch=0 --batch-size=16 --load_model=./CIFAR100/models/cifar100_resnet50_best.weights --name=CIFAR100_resnet50
+pruning_engine.load_mask(): did not find mask file, will load nothing
+=> loading checkpoint './CIFAR100/models/cifar100_resnet50_best.weights'
+conv1.weight torch.Size([64, 3, 3, 3])
+bn1.weight torch.Size([64])
+bn1.bias torch.Size([64])
+bn1.running_mean torch.Size([64])
+bn1.running_var torch.Size([64])
+bn1.num_batches_tracked torch.Size([])
+layer1.0.conv1.weight torch.Size([64, 64, 1, 1])
+layer1.0.bn1.weight torch.Size([64])
+layer1.0.bn1.bias torch.Size([64])
+layer1.0.bn1.running_mean torch.Size([64])
+layer1.0.bn1.running_var torch.Size([64])
+*********
+conv1.weight torch.Size([64, 3, 3, 3])
+bn1.weight torch.Size([64])
+bn1.bias torch.Size([64])
+bn1.running_mean torch.Size([64])
+bn1.running_var torch.Size([64])
+bn1.num_batches_tracked torch.Size([])
+layer1.0.conv1.weight torch.Size([64, 64, 1, 1])
+layer1.0.bn1.weight torch.Size([64])
+layer1.0.bn1.bias torch.Size([64])
+layer1.0.bn1.running_mean torch.Size([64])
+layer1.0.bn1.running_var torch.Size([64])
+=> loaded checkpoint './CIFAR100/models/cifar100_resnet50_best.weights' (epoch -1)
+epoch, neuron_units, loss, dl2_loss, top1, top5, dl2_p_acc, dl2_constraint_acc
+1, 7552, 0.9749, 88.5686, 81.250, 93.750, 0.010, 0.000, 1.0000, 1.0000, 1.0000, 1.0000, 1.0000, 1.0000, 100, 589.1694152355194 
+1, 7452, 3.2755, 2.5789, 43.750, 56.250, 0.010, 0.001, 1.0000, 1.0000, 1.0000, 1.0000, 1.0000, 1.0000, 200, 1307.212272644043 
+1, 7352, 2.6978, 0.9864, 50.000, 75.000, 0.013, 0.239, 0.7778, 0.4444, 0.5000, 0.7273, 0.8750, 0.8571, 300, 2032.6033787727356 
+1, 7252, 4.4443, 28.1948, 25.000, 43.750, 0.010, 0.017, 1.0000, 1.0000, 1.0000, 1.0000, 1.0000, 1.0000, 400, 2745.0771322250366 
+1, 7152, 4.9518, 858.3233, 6.250, 37.500, 0.010, 0.000, 1.0000, 1.0000, 1.0000, 1.0000, 1.0000, 1.0000, 500, 3461.12691116333 
+1, 7052, 105.1717, 78863207144232064.0000, 0.000, 18.750, 0.010, 0.000, 1.0000, 1.0000, 1.0000, 1.0000, 1.0000, 1.0000, 600, 4179.640544176102 
+1, 6952, 5.4393, 0.3016, 0.000, 6.250, 0.010, 0.000, 1.0000, 1.0000, 1.0000, 1.0000, 1.0000, 1.0000, 700, 4890.72598695755 
+1, 6852, 5.4473, 37.2258, 0.000, 0.000, 0.010, 0.520, 0.1429, 0.2500, 0.1667, 0.2727, 0.1250, 0.5000, 800, 5608.057624101639 
+1, 6752, 12.0899, 504.0401, 0.000, 0.000, 0.007, 0.333, 0.2500, 0.0000, 0.0000, 0.0000, 0.0000, 0.0000, 900, 6319.472904205322 

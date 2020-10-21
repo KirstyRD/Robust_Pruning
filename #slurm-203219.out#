@@ -1,0 +1,8 @@
+BTraceback (most recent call last):
+  File "main_6epsilons.py", line 8, in <module>
+    import torch.nn as nn
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "remove_header.py", line 3, in <module>
+    lines = open(sys.argv[1], 'r').readlines()
+FileNotFoundError: [Errno 2] No such file or directory: '../cuda/log_MNIST_lenet3_20_30_0.25_RobustnessDandR_eps1=7.8,_eps2=2.9__FGSM.txt'
