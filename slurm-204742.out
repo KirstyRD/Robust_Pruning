@@ -1,0 +1,44 @@
+Traceback (most recent call last):
+  File "main_gc.py", line 1159, in <module>
+    main()
+  File "main_gc.py", line 1120, in main
+    num_left, new_iter = train(args, model, device, train_loader, optimizer, epoch, criterion, oracle, test_loader_constr, test_loader_adv, print_iter, starttime, pruning_settings, train_writer=train_writer, pruning_engine=pruning_engine)
+  File "main_gc.py", line 245, in train
+    epoch, neuron_units , loss=losses, dl2_loss=dl2_batch_loss,
+UnboundLocalError: local variable 'dl2_batch_loss' referenced before assignment
+Files already downloaded and verified
+Files already downloaded and verified
+Ignoring network_output argument, using prob and logprob to obtain KL divergence
+CIFAR100_resnet50_0_100_0.0_RobustnessDandR_eps1=7.8,_eps2=2.9__128
+main_gc.py --dataset=CIFAR100 --model=resnet50 --pruning=True --tensorboard=True --log-interval=1 --pruning_config=./configs/CIFAR100_train.json --constraint=RobustnessDandR(eps1=7.8, eps2=2.9) --print-after-epoch=0 --dl2-weight=0 --delay=0 --epochs=200 --adv-after-epoch=100000000000 --batch-size=128 --load_model=./CIFAR100/cifar100_resnet50_best.weights --name=CIFAR100_res --lr=0.2 --lr-decay-every=60 --lr-decay-scalar=0.2
+pruning_engine.load_mask(): did not find mask file, will load nothing
+=> loading checkpoint './CIFAR100/cifar100_resnet50_best.weights'
+conv1.weight torch.Size([64, 3, 3, 3])
+bn1.weight torch.Size([64])
+bn1.bias torch.Size([64])
+bn1.running_mean torch.Size([64])
+bn1.running_var torch.Size([64])
+bn1.num_batches_tracked torch.Size([])
+layer1.0.conv1.weight torch.Size([64, 64, 1, 1])
+layer1.0.bn1.weight torch.Size([64])
+layer1.0.bn1.bias torch.Size([64])
+layer1.0.bn1.running_mean torch.Size([64])
+layer1.0.bn1.running_var torch.Size([64])
+*********
+conv1.weight torch.Size([64, 3, 3, 3])
+bn1.weight torch.Size([64])
+bn1.bias torch.Size([64])
+bn1.running_mean torch.Size([64])
+bn1.running_var torch.Size([64])
+bn1.num_batches_tracked torch.Size([])
+layer1.0.conv1.weight torch.Size([64, 64, 1, 1])
+layer1.0.bn1.weight torch.Size([64])
+layer1.0.bn1.bias torch.Size([64])
+layer1.0.bn1.running_mean torch.Size([64])
+layer1.0.bn1.running_var torch.Size([64])
+=> loaded checkpoint './CIFAR100/cifar100_resnet50_best.weights' (epoch -1)
+epoch, neuron_units, loss, dl2_loss, top1, top5, dl2_p_acc, dl2_constraint_acc
+Traceback (most recent call last):
+  File "remove_header.py", line 3, in <module>
+    lines = open(sys.argv[1], 'r').readlines()
+FileNotFoundError: [Errno 2] No such file or directory: '../CIFAR100_resnet50_256/log_CIFAR100_resnet50_1_1__RobustnessDandR_eps1=7.8,_eps2=2.9__FGSM.txt'

@@ -586,7 +586,7 @@ def main():
                         help='model selection, choices: lenet3, vgg, mobilenetv2, resnet18',
                         choices=["lenet3", "vgg", "mobilenetv2", "resnet18", "resnet152", "resnet50", "resnet50_noskip",
                                  "resnet20", "resnet34", "resnet101", "resnet101_noskip", "densenet201_imagenet",
-                                 'densenet121_imagenet'])
+                                 'densenet121'])
 
     parser.add_argument('--tensorboard', type=str2bool, nargs='?',
                         help='Log progress to TensorBoard')
@@ -749,7 +749,7 @@ def main():
         from models.densenet_imagenet import DenseNet201
         model = DenseNet201(gate_types=['output_bn'], pretrained=True)
     elif args.model == "densenet121":
-        from models.densenet import DenseNet121
+        from models.densenet_cifar100 import DenseNet121
         model = DenseNet121(gate_types=['output_bn'], pretrained=True)
     else:
         print(args.model, "model is not supported")

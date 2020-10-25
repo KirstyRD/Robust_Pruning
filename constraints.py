@@ -6,6 +6,8 @@ import sys
 sys.path.append('../../')
 import dl2lib as dl2
 
+import gc
+
 
 def kl(p, log_p, log_q):
     return torch.sum(-p * log_q + p * log_p, dim=1)
@@ -345,6 +347,8 @@ class DivergenceAndRobustnessDatasetConstraint(Constraint):
     def get_condition(self, z_inp, z_out, x_batches, y_batches):
         n_batch = x_batches[0].size()[0]
 
+        gc.collect()
+        torch.cuda.empty_cache()
         x_out1, x_out2 = self.net(x_batches[0]), self.net(x_batches[1])
 
         x_probs1 = F.softmax(x_out1, dim=1)

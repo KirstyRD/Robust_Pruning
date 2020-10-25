@@ -120,14 +120,13 @@ class Bottleneck(nn.Module):
 
 class ResNet(nn.Module):
 
-    def __init__(self, block, layers, num_classes=1000, skip_gate = True):
+    def __init__(self, block, layers, num_classes=100, skip_gate = True):
         self.inplanes = 64
         super(ResNet, self).__init__()
-        self.conv1 = nn.Conv2d(3, 64, kernel_size=7, stride=2, padding=3,
-                               bias=False)
+        self.conv1 = nn.Conv2d(3, 64, kernel_size=3, padding=1, stride=1,  bias=False)
         self.bn1 = nn.BatchNorm2d(64)
         self.relu = nn.ReLU(inplace=True)
-        self.maxpool = nn.MaxPool2d(kernel_size=3, stride=2, padding=1)
+        #self.maxpool = nn.MaxPool2d(kernel_size=3, padding=1)
 
         gate = skip_gate
         self.gate = gate
@@ -152,7 +151,7 @@ class ResNet(nn.Module):
         self.layer2 = self._make_layer(block, 128, layers[1], stride=2, gate=self.gate_skip128)
         self.layer3 = self._make_layer(block, 256, layers[2], stride=2, gate=self.gate_skip256)
         self.layer4 = self._make_layer(block, 512, layers[3], stride=2, gate=self.gate_skip512)
-        self.avgpool = nn.AvgPool2d(7, stride=1)
+        self.avgpool = nn.MaxPool2d(kernel_size=4, stride=1)#AvgPool2d((1,1))
         self.fc = nn.Linear(512 * block.expansion, num_classes)
 
         for m in self.modules():
@@ -184,7 +183,7 @@ class ResNet(nn.Module):
         x = self.conv1(x)
         x = self.bn1(x)
         x = self.relu(x)
-        x = self.maxpool(x)
+#        x = self.maxpool(x)
 
         # if self.gate:
         #     x=self.gate_skip1(x)
@@ -232,8 +231,8 @@ def resnet50(pretrained=False, **kwargs):
         pretrained (bool): If True, returns a model pre-trained on ImageNet
     """
     model = ResNet(Bottleneck, [3, 4, 6, 3], **kwargs)
-    if pretrained:
-        model.load_state_dict(model_zoo.load_url(model_urls['resnet50']))
+    #if pretrained:
+        #model.load_state_dict(model_zoo.load_url(model_urls['resnet50']))
     return model
 
 

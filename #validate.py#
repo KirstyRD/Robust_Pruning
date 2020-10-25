@@ -1,0 +1,29 @@
+import matplotlib.pyplot as plt
+import sys
+
+file_in1       = sys.argv[1]
+dataset        = sys.argv[2]
+model          = sys.argv[3]
+prune_per_iter = sys.argv[4]
+frequency      = sys.argv[5]
+dl2_weight     = sys.argv[6]
+dl2_constr     = sys.argv[7]    # RobustnessDandR(eps1=7.8, eps2=2.9)    
+
+file_out = sys.argv[8]
+
+import csv
+
+y_params = [] # number of parameters left
+y_iter   = [] # iteration
+y_time   = [] # time
+
+
+with open(file_in1,'r') as csvfile:
+    plots = csv.reader(csvfile, delimiter=',')
+    headers = next(plots)
+    for row in plots:
+        y_params.append(float(row[1]))  # number of parameters left
+        y_iter.append(float(row[8])) # iteration
+        y_time.append(float(row[9])) # time
+
+model = "checkpoint_%s_%s_%s_%s_%s_%s_%s_%s_%s.weights" % (dataset, model, pruned_per_iter, frequency, dl2_weight, dl2_constr.replace(" ", "_").replace("(","_").replace(")","_"), y_params[i], y_iter[i], y_time[i] )

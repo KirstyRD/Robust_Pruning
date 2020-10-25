@@ -1,0 +1,2 @@
+cp: cannot stat ‘checkpoint_CIFAR100_resnet50_100_100_0.0_RobustnessDandR_eps1=7.8,_eps2=2.9__7552_107374182397200_100.000000.weights’: No such file or directory
+slurmstepd: error: *** JOB 204733 ON gpu04 CANCELLED AT 2020-10-21T16:14:25 ***

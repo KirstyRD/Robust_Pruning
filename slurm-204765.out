@@ -1,0 +1,115 @@
+Files already downloaded and verified
+Files already downloaded and verified
+CIFAR100_resnet50_350_100_0.05_RobustnessG_eps=0.3,_delta=0.52__64
+main_gc.py --dataset=CIFAR100 --model=resnet50 --pruning=True --tensorboard=True --log-interval=100 --pruning_config=./configs/CIFAR100_350_100.json --constraint=RobustnessG(eps=0.3, delta=0.52) --print-after-epoch=0 --dl2-weight=0.05 --delay=0 --epochs=1000 --adv-after-epoch=0 --batch-size=64 --load_model=./CIFAR100/cifar100_resnet50_best.weights --name=CIFAR100_resnet50_64
+pruning_engine.load_mask(): did not find mask file, will load nothing
+=> loading checkpoint './CIFAR100/cifar100_resnet50_best.weights'
+conv1.weight torch.Size([64, 3, 3, 3])
+bn1.weight torch.Size([64])
+bn1.bias torch.Size([64])
+bn1.running_mean torch.Size([64])
+bn1.running_var torch.Size([64])
+bn1.num_batches_tracked torch.Size([])
+layer1.0.conv1.weight torch.Size([64, 64, 1, 1])
+layer1.0.bn1.weight torch.Size([64])
+layer1.0.bn1.bias torch.Size([64])
+layer1.0.bn1.running_mean torch.Size([64])
+layer1.0.bn1.running_var torch.Size([64])
+*********
+conv1.weight torch.Size([64, 3, 3, 3])
+bn1.weight torch.Size([64])
+bn1.bias torch.Size([64])
+bn1.running_mean torch.Size([64])
+bn1.running_var torch.Size([64])
+bn1.num_batches_tracked torch.Size([])
+layer1.0.conv1.weight torch.Size([64, 64, 1, 1])
+layer1.0.bn1.weight torch.Size([64])
+layer1.0.bn1.bias torch.Size([64])
+layer1.0.bn1.running_mean torch.Size([64])
+layer1.0.bn1.running_var torch.Size([64])
+=> loaded checkpoint './CIFAR100/cifar100_resnet50_best.weights' (epoch -1)
+epoch, neuron_units, loss, dl2_loss, top1, top5, dl2_p_acc, dl2_constraint_acc
+1, 7552, 0.3910, 0.5905, 85.938, 100.000, 0.000, 0.438, 100, 498.8103392124176 
+1, 7202, 0.2116, 0.4393, 95.312, 100.000, 0.000, 0.500, 200, 980.342581987381 
+1, 6852, 0.6831, 0.0769, 85.938, 96.875, 0.000, 0.781, 300, 1463.7245557308197 
+1, 6502, 0.4427, 0.1133, 93.750, 96.875, 0.000, 0.844, 400, 1949.4728174209595 
+1, 6152, 0.5281, 0.0124, 84.375, 98.438, 0.000, 0.938, 500, 2437.2725224494934 
+1, 5802, 0.6429, 0.0228, 78.125, 98.438, 0.000, 0.969, 600, 2927.4884095191956 
+1, 5452, 1.1021, 0.0310, 70.312, 96.875, 0.000, 0.906, 700, 3420.203004837036 
+2, 5102, 0.6923, 0.0002, 81.250, 96.875, 0.000, 0.969, 800, 3959.5837638378143 
+2, 4752, 1.0172, 0.0000, 76.562, 95.312, 0.000, 1.000, 900, 4458.6835379600525 
+2, 4402, 1.0026, 0.0263, 71.875, 93.750, 0.000, 0.906, 1000, 4958.290342330933 
+2, 4052, 1.0855, 0.0844, 65.625, 96.875, 0.000, 0.844, 1100, 5459.863176107407 
+2, 3702, 0.8776, 0.0062, 70.312, 93.750, 0.000, 0.969, 1200, 5963.951682806015 
+2, 3352, 1.0828, 0.0000, 68.750, 90.625, 0.000, 1.000, 1300, 6470.243013381958 
+2, 3002, 1.0910, 0.0151, 64.062, 92.188, 0.000, 0.969, 1400, 6978.690304040909 
+2, 2652, 1.5867, 0.0137, 50.000, 90.625, 0.000, 0.938, 1500, 7489.4766709804535 
+3, 1952, 2.1317, 0.0000, 43.750, 75.000, 0.000, 1.000, 2400, 8128.876526594162 
+3, 1602, 2.4455, 0.0184, 31.250, 70.312, 0.000, 0.906, 2500, 8645.637201547623 
+3, 1252, 2.8356, 0.0176, 25.000, 65.625, 0.000, 0.812, 2600, 9163.442515850067 
+3, 902, 3.6901, 0.0236, 9.375, 35.938, 0.000, 0.906, 2700, 9683.180565595627 
+3, 552, 3.6949, 0.0003, 21.875, 42.188, 0.000, 0.969, 2800, 10205.092837810516 
+3, 202, 6.3869, 0.0000, 6.250, 17.188, 0.000, 1.000, 2900, 10729.281551599503 
+3, 0, 4.1813, 0.0003, 4.688, 28.125, 0.000, 0.969, 3000, 11255.398384809494 
+Files already downloaded and verified
+Files already downloaded and verified
+CIFAR100_resnet50_350_100_0.05_RobustnessG_eps=0.3,_delta=0.52__64
+main_gc.py --dataset=CIFAR100 --model=resnet50 --pruning=True --tensorboard=True --log-interval=100 --pruning_config=./configs/CIFAR100_350_100.json --constraint=RobustnessG(eps=0.3, delta=0.52) --print-after-epoch=0 --dl2-weight=0.05 --delay=0 --epochs=1000 --adv-after-epoch=0 --batch-size=64 --load_model=./CIFAR100/cifar100_resnet50_best.weights --name=CIFAR100_resnet50_64
+pruning_engine.load_mask(): did not find mask file, will load nothing
+=> loading checkpoint './CIFAR100/cifar100_resnet50_best.weights'
+conv1.weight torch.Size([64, 3, 3, 3])
+bn1.weight torch.Size([64])
+bn1.bias torch.Size([64])
+bn1.running_mean torch.Size([64])
+bn1.running_var torch.Size([64])
+bn1.num_batches_tracked torch.Size([])
+layer1.0.conv1.weight torch.Size([64, 64, 1, 1])
+layer1.0.bn1.weight torch.Size([64])
+layer1.0.bn1.bias torch.Size([64])
+layer1.0.bn1.running_mean torch.Size([64])
+layer1.0.bn1.running_var torch.Size([64])
+*********
+conv1.weight torch.Size([64, 3, 3, 3])
+bn1.weight torch.Size([64])
+bn1.bias torch.Size([64])
+bn1.running_mean torch.Size([64])
+bn1.running_var torch.Size([64])
+bn1.num_batches_tracked torch.Size([])
+layer1.0.conv1.weight torch.Size([64, 64, 1, 1])
+layer1.0.bn1.weight torch.Size([64])
+layer1.0.bn1.bias torch.Size([64])
+layer1.0.bn1.running_mean torch.Size([64])
+layer1.0.bn1.running_var torch.Size([64])
+=> loaded checkpoint './CIFAR100/cifar100_resnet50_best.weights' (epoch -1)
+epoch, neuron_units, loss, dl2_loss, top1, top5, dl2_p_acc, dl2_constraint_acc
+1, 7552, 0.3782, 0.6240, 82.812, 100.000, 0.000, 0.438, 100, 497.6212372779846 
+1, 7202, 0.1322, 0.4915, 95.312, 100.000, 0.000, 0.531, 200, 979.3132629394531 
+1, 6852, 0.7528, 0.1073, 82.812, 98.438, 0.000, 0.688, 300, 1462.7767436504364 
+1, 6502, 0.4313, 0.0500, 93.750, 98.438, 0.000, 0.938, 400, 1948.1675109863281 
+1, 6152, 0.4561, 0.0451, 84.375, 100.000, 0.000, 0.844, 500, 2436.2973499298096 
+1, 5802, 0.6954, 0.0134, 79.688, 98.438, 0.000, 0.969, 600, 2926.440202474594 
+1, 5452, 0.8261, 0.0000, 75.000, 96.875, 0.000, 1.000, 700, 3419.581608057022 
+2, 5102, 0.6346, 0.0814, 81.250, 100.000, 0.000, 0.875, 800, 3958.9650774002075 
+2, 4752, 0.9809, 0.0145, 73.438, 98.438, 0.000, 0.938, 900, 4457.600476741791 
+2, 4402, 0.9393, 0.0273, 70.312, 95.312, 0.000, 0.969, 1000, 4956.961135625839 
+2, 4052, 1.0712, 0.0000, 70.312, 95.312, 0.000, 1.000, 1100, 5458.191899299622 
+2, 3702, 0.8647, 0.0402, 68.750, 95.312, 0.000, 0.844, 1200, 5962.108012914658 
+2, 3352, 1.1144, 0.0000, 67.188, 92.188, 0.000, 1.000, 1300, 6468.035546779633 
+2, 3002, 1.0148, 0.0000, 60.938, 96.875, 0.000, 1.000, 1400, 6976.652491092682 
+2, 2652, 1.6542, 0.0528, 51.562, 84.375, 0.000, 0.938, 1500, 7486.958566665649 
+3, 1952, 2.4274, 0.0004, 39.062, 67.188, 0.000, 0.969, 2400, 8126.105617523193 
+3, 1602, 2.6426, 0.0228, 26.562, 68.750, 0.000, 0.906, 2500, 8642.711844682693 
+3, 1252, 3.1478, 0.0367, 23.438, 59.375, 0.000, 0.812, 2600, 9160.7710044384 
+3, 902, 3.7840, 0.0198, 12.500, 48.438, 0.000, 0.906, 2700, 9680.873384952545 
+3, 552, 5.8721, 0.0000, 15.625, 32.812, 0.000, 1.000, 2800, 10203.294340133667 
+3, 202, 5.4602, 0.0000, 0.000, 15.625, 0.000, 1.000, 2900, 10727.851742982864 
+3, 0, 4.1254, 0.0000, 4.688, 26.562, 0.000, 1.000, 3000, 11254.112765073776 
+Traceback (most recent call last):
+  File "remove_header.py", line 3, in <module>
+    lines = open(sys.argv[1], 'r').readlines()
+FileNotFoundError: [Errno 2] No such file or directory: '../CIFAR100_resnet50_128/log_CIFAR100_resnet50_350_100_0.05_RobustnessG_eps=0.3,_delta=0.52__FGSM.txt'
+/cm/local/apps/slurm/var/spool/job204765/slurm_script: line 29: files/CIFAR100_resnet50_350_100_0.05_RobustnessG_eps=0.3,_delta=0.52__FGSM.txt: No such file or directory
+Traceback (most recent call last):
+  File "remove_header.py", line 3, in <module>
+    lines = open(sys.argv[1], 'r').readlines()
+FileNotFoundError: [Errno 2] No such file or directory: '../CIFAR100_resnet50_128/log_CIFAR100_resnet50_350_100_0.05_RobustnessG_eps=0.3,_delta=0.52__FGSM.txt'

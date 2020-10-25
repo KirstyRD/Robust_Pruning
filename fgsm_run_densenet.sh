@@ -13,9 +13,9 @@ batch_size=$8
 config=$"./configs/${dataset}_${prune_per_iter}_${frequency}.json"
 
 
-python3 main_6epsilons.py --dataset=$dataset --model=$network --pruning=True --tensorboard=True --log-interval=$frequency --pruning_config=$config --constraint="${dl2_constr}" --print-after-epoch=0 --dl2-weight=$dl2_weight1 --delay=0 --epochs=1000 --adv-after-epoch=10 --batch-size=$batch_size --load_model="./CIFAR100_densenet/best_fornow.weights" --name="CIFAR100_densenet121_16"
+python3 main_allepsilons.py --dataset=$dataset --model=$network --pruning=True --tensorboard=True --log-interval=$frequency --pruning_config=$config --constraint="${dl2_constr}" --print-after-epoch=0 --dl2-weight=$dl2_weight1 --delay=0 --epochs=1000 --adv-after-epoch=10 --batch-size=$batch_size --load_model="./CIFAR100_densenet/best_fornow.weights" --name="CIFAR100_densenet121_16"
 
-python3 main_6epsilons.py --dataset=$dataset --model=$network --pruning=True --tensorboard=True --log-interval=$frequency --pruning_config=$config --constraint="${dl2_constr}" --print-after-epoch=0 --dl2-weight=$dl2_weight2 --delay=0 --epochs=1000 --adv-after-epoch=0 --batch-size=$batch_size --load_model="./CIFAR100_densenet/best_fornow.weights" --name="CIFAR100_densenet121_16"#
+python3 main_allepsilons.py --dataset=$dataset --model=$network --pruning=True --tensorboard=True --log-interval=$frequency --pruning_config=$config --constraint="${dl2_constr}" --print-after-epoch=0 --dl2-weight=$dl2_weight2 --delay=0 --epochs=1000 --adv-after-epoch=0 --batch-size=$batch_size --load_model="./CIFAR100_densenet/best_fornow.weights" --name="CIFAR100_densenet121_16"#
 
 dl2_modified=${dl2_constr//[() ]/_}
 

@@ -1,0 +1,103 @@
+Traceback (most recent call last):
+  File "main_gc.py", line 1159, in <module>
+    main()
+  File "main_gc.py", line 1120, in main
+    num_left, new_iter = train(args, model, device, train_loader, optimizer, epoch, criterion, oracle, test_loader_constr, test_loader_adv, print_iter, starttime, pruning_settings, train_writer=train_writer, pruning_engine=pruning_engine)
+  File "main_gc.py", line 210, in train
+    acc, _ = fgsm_test(model, device, test_loader_adv, e)
+  File "main_gc.py", line 484, in fgsm_test
+    final_acc = correct/float(length_testset)
+ZeroDivisionError: float division by zero
+Files already downloaded and verified
+Files already downloaded and verified
+Ignoring network_output argument, using prob and logprob to obtain KL divergence
+CIFAR100_resnet50_350_100_0.2_RobustnessDandR_eps1=7.8,_eps2=2.9__64
+main_gc.py --dataset=CIFAR100 --model=resnet50 --pruning=True --tensorboard=True --log-interval=100 --pruning_config=./configs/CIFAR100_350_100.json --constraint=RobustnessDandR(eps1=7.8, eps2=2.9) --print-after-epoch=0 --dl2-weight=0.2 --delay=0 --epochs=1000 --adv-after-epoch=0 --batch-size=64 --load_model=./CIFAR100/cifar100_resnet50_best.weights --name=CIFAR100_resnet50_64
+pruning_engine.load_mask(): did not find mask file, will load nothing
+=> loading checkpoint './CIFAR100/cifar100_resnet50_best.weights'
+conv1.weight torch.Size([64, 3, 3, 3])
+bn1.weight torch.Size([64])
+bn1.bias torch.Size([64])
+bn1.running_mean torch.Size([64])
+bn1.running_var torch.Size([64])
+bn1.num_batches_tracked torch.Size([])
+layer1.0.conv1.weight torch.Size([64, 64, 1, 1])
+layer1.0.bn1.weight torch.Size([64])
+layer1.0.bn1.bias torch.Size([64])
+layer1.0.bn1.running_mean torch.Size([64])
+layer1.0.bn1.running_var torch.Size([64])
+*********
+conv1.weight torch.Size([64, 3, 3, 3])
+bn1.weight torch.Size([64])
+bn1.bias torch.Size([64])
+bn1.running_mean torch.Size([64])
+bn1.running_var torch.Size([64])
+bn1.num_batches_tracked torch.Size([])
+layer1.0.conv1.weight torch.Size([64, 64, 1, 1])
+layer1.0.bn1.weight torch.Size([64])
+layer1.0.bn1.bias torch.Size([64])
+layer1.0.bn1.running_mean torch.Size([64])
+layer1.0.bn1.running_var torch.Size([64])
+=> loaded checkpoint './CIFAR100/cifar100_resnet50_best.weights' (epoch -1)
+epoch, neuron_units, loss, dl2_loss, top1, top5, dl2_p_acc, dl2_constraint_acc
+1, 7552, 13.7336, 51.1217, 1.562, 6.250, 0.000, 0.625, 100, 257.8019781112671 
+1, 7202, 12.6466, 48.9729, 1.562, 6.250, 0.000, 0.750, 200, 500.9588906764984 
+Traceback (most recent call last):
+  File "main_gc.py", line 1159, in <module>
+    main()
+  File "main_gc.py", line 1120, in main
+    num_left, new_iter = train(args, model, device, train_loader, optimizer, epoch, criterion, oracle, test_loader_constr, test_loader_adv, print_iter, starttime, pruning_settings, train_writer=train_writer, pruning_engine=pruning_engine)
+  File "main_gc.py", line 210, in train
+    acc, _ = fgsm_test(model, device, test_loader_adv, e)
+  File "main_gc.py", line 484, in fgsm_test
+    final_acc = correct/float(length_testset)
+ZeroDivisionError: float division by zero
+Files already downloaded and verified
+Files already downloaded and verified
+Ignoring network_output argument, using prob and logprob to obtain KL divergence
+CIFAR100_resnet50_350_100_0.15_RobustnessDandR_eps1=7.8,_eps2=2.9__64
+main_gc.py --dataset=CIFAR100 --model=resnet50 --pruning=True --tensorboard=True --log-interval=100 --pruning_config=./configs/CIFAR100_350_100.json --constraint=RobustnessDandR(eps1=7.8, eps2=2.9) --print-after-epoch=0 --dl2-weight=0.15 --delay=0 --epochs=1000 --adv-after-epoch=0 --batch-size=64 --load_model=./CIFAR100/cifar100_resnet50_best.weights --name=CIFAR100_resnet50_64
+pruning_engine.load_mask(): did not find mask file, will load nothing
+=> loading checkpoint './CIFAR100/cifar100_resnet50_best.weights'
+conv1.weight torch.Size([64, 3, 3, 3])
+bn1.weight torch.Size([64])
+bn1.bias torch.Size([64])
+bn1.running_mean torch.Size([64])
+bn1.running_var torch.Size([64])
+bn1.num_batches_tracked torch.Size([])
+layer1.0.conv1.weight torch.Size([64, 64, 1, 1])
+layer1.0.bn1.weight torch.Size([64])
+layer1.0.bn1.bias torch.Size([64])
+layer1.0.bn1.running_mean torch.Size([64])
+layer1.0.bn1.running_var torch.Size([64])
+*********
+conv1.weight torch.Size([64, 3, 3, 3])
+bn1.weight torch.Size([64])
+bn1.bias torch.Size([64])
+bn1.running_mean torch.Size([64])
+bn1.running_var torch.Size([64])
+bn1.num_batches_tracked torch.Size([])
+layer1.0.conv1.weight torch.Size([64, 64, 1, 1])
+layer1.0.bn1.weight torch.Size([64])
+layer1.0.bn1.bias torch.Size([64])
+layer1.0.bn1.running_mean torch.Size([64])
+layer1.0.bn1.running_var torch.Size([64])
+=> loaded checkpoint './CIFAR100/cifar100_resnet50_best.weights' (epoch -1)
+epoch, neuron_units, loss, dl2_loss, top1, top5, dl2_p_acc, dl2_constraint_acc
+1, 7552, 5.9444, 103.0606, 4.688, 20.312, 0.000, 0.375, 100, 259.47396898269653 
+1, 7202, 35.1783, 69.4633, 1.562, 7.812, 0.000, 0.688, 200, 505.2602472305298 
+1, 6852, 25.9651, 176.3588, 1.562, 10.938, 0.000, 0.125, 300, 751.9511907100677 
+1, 6502, 28.3671, 24.1931, 3.125, 3.125, 0.000, 0.812, 400, 1002.1464145183563 
+1, 6152, 10.4115, 38.4241, 0.000, 1.562, 0.000, 0.750, 500, 1252.3703734874725 
+1, 5802, 6.4830, 35.7348, 0.000, 1.562, 0.000, 0.750, 600, 1505.2986760139465 
+1, 5452, 6.0675, 21.8453, 1.562, 10.938, 0.000, 0.750, 700, 1760.209167957306 
+2, 5102, 5.6429, 112.3377, 1.562, 7.812, 0.000, 0.250, 800, 2057.245849609375 
+Traceback (most recent call last):
+  File "remove_header.py", line 3, in <module>
+    lines = open(sys.argv[1], 'r').readlines()
+FileNotFoundError: [Errno 2] No such file or directory: '../CIFAR100_resnet50_128/log_CIFAR100_resnet50_350_100_0.2_RobustnessDandR_eps1=7.8,_eps2=2.9__FGSM.txt'
+/cm/local/apps/slurm/var/spool/job204749/slurm_script: line 29: files/CIFAR100_resnet50_350_100_0.2_RobustnessDandR_eps1=7.8,_eps2=2.9__FGSM.txt: No such file or directory
+Traceback (most recent call last):
+  File "remove_header.py", line 3, in <module>
+    lines = open(sys.argv[1], 'r').readlines()
+FileNotFoundError: [Errno 2] No such file or directory: '../CIFAR100_resnet50_128/log_CIFAR100_resnet50_350_100_0.15_RobustnessDandR_eps1=7.8,_eps2=2.9__FGSM.txt'
