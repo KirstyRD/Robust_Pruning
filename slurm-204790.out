@@ -1,0 +1,85 @@
+Files already downloaded and verified
+Ignoring network_output argument, using prob and logprob to obtain KL divergence
+CIFAR100_resnet50_0_100_0.0_RobustnessDandR_eps1=7.8,_eps2=2.9__64
+validate.py --dataset=CIFAR100 --model=resnet50 --tensorboard=True --pruning_config=./configs/CIFAR100_0_100.json --constraint=RobustnessDandR(eps1=7.8, eps2=2.9) --dl2-weight=0.0 --batch-size=64 --name=CIFAR100_res_valid --checkpoint_folder=CIFAR100_res --log_file=process_output/textfiles/log_CIFAR100_resnet50_0_100_0.0_RobustnessDandR_eps1=7.8,_eps2=2.9__64.txt
+print_iter, neuron_units, train_loss, train_dl2_loss, train_top1, train_top5, train_cons, train_time, test_loss, test_dl2_loss, test_acc, test_constr, adv_acc1, adv_acc2, test_time
+Finding  CIFAR100_res/models/checkpoint_CIFAR100_resnet50_0_100_0.0_RobustnessDandR_eps1=7.8,_eps2=2.9__7552_100_7.812000.weights
+=> loading checkpoint 'CIFAR100_res/models/checkpoint_CIFAR100_resnet50_0_100_0.0_RobustnessDandR_eps1=7.8,_eps2=2.9__7552_100_7.812500.weights'
+=> loaded checkpoint 'CIFAR100_res/models/checkpoint_CIFAR100_resnet50_0_100_0.0_RobustnessDandR_eps1=7.8,_eps2=2.9__7552_100_7.812500.weights' (epoch -1)
+time taken for 100 iterations, per-iteration is:  306.04915857315063 ms
+num:  157
+0, 100, 6.5533, 177.9769, 7.812, 9.375, 4.8951, 1.060, 306.04915857315063 
+Finding  CIFAR100_res/models/checkpoint_CIFAR100_resnet50_0_100_0.0_RobustnessDandR_eps1=7.8,_eps2=2.9__7552_200_0.000000.weights
+=> loading checkpoint 'CIFAR100_res/models/checkpoint_CIFAR100_resnet50_0_100_0.0_RobustnessDandR_eps1=7.8,_eps2=2.9__7552_200_0.000000.weights'
+=> loaded checkpoint 'CIFAR100_res/models/checkpoint_CIFAR100_resnet50_0_100_0.0_RobustnessDandR_eps1=7.8,_eps2=2.9__7552_200_0.000000.weights' (epoch -1)
+time taken for 100 iterations, per-iteration is:  264.0152597427368 ms
+num:  157
+1, 200, 4.8690, 231.5525, 0.000, 3.125, 6.0595, 1.430, 264.0152597427368 
+Finding  CIFAR100_res/models/checkpoint_CIFAR100_resnet50_0_100_0.0_RobustnessDandR_eps1=7.8,_eps2=2.9__7552_300_1.562000.weights
+=> loading checkpoint 'CIFAR100_res/models/checkpoint_CIFAR100_resnet50_0_100_0.0_RobustnessDandR_eps1=7.8,_eps2=2.9__7552_300_1.562500.weights'
+=> loaded checkpoint 'CIFAR100_res/models/checkpoint_CIFAR100_resnet50_0_100_0.0_RobustnessDandR_eps1=7.8,_eps2=2.9__7552_300_1.562500.weights' (epoch -1)
+time taken for 100 iterations, per-iteration is:  263.62118005752563 ms
+num:  157
+2, 300, 4.6440, 167.2735, 1.562, 10.938, 5.0871, 1.240, 263.62118005752563 
+Finding  CIFAR100_res/models/checkpoint_CIFAR100_resnet50_0_100_0.0_RobustnessDandR_eps1=7.8,_eps2=2.9__7552_400_1.562000.weights
+=> loading checkpoint 'CIFAR100_res/models/checkpoint_CIFAR100_resnet50_0_100_0.0_RobustnessDandR_eps1=7.8,_eps2=2.9__7552_400_1.562500.weights'
+=> loaded checkpoint 'CIFAR100_res/models/checkpoint_CIFAR100_resnet50_0_100_0.0_RobustnessDandR_eps1=7.8,_eps2=2.9__7552_400_1.562500.weights' (epoch -1)
+time taken for 100 iterations, per-iteration is:  263.3607029914856 ms
+num:  157
+3, 400, 4.5887, 222.0511, 1.562, 6.250, 4.6100, 1.480, 263.3607029914856 
+Finding  CIFAR100_res/models/checkpoint_CIFAR100_resnet50_0_100_0.0_RobustnessDandR_eps1=7.8,_eps2=2.9__7552_500_0.000000.weights
+=> loading checkpoint 'CIFAR100_res/models/checkpoint_CIFAR100_resnet50_0_100_0.0_RobustnessDandR_eps1=7.8,_eps2=2.9__7552_500_0.000000.weights'
+=> loaded checkpoint 'CIFAR100_res/models/checkpoint_CIFAR100_resnet50_0_100_0.0_RobustnessDandR_eps1=7.8,_eps2=2.9__7552_500_0.000000.weights' (epoch -1)
+time taken for 100 iterations, per-iteration is:  263.6003613471985 ms
+num:  157
+4, 500, 4.5655, 200.6261, 0.000, 3.125, 4.5901, 1.630, 263.6003613471985 
+Finding  CIFAR100_res/models/checkpoint_CIFAR100_resnet50_0_100_0.0_RobustnessDandR_eps1=7.8,_eps2=2.9__7552_600_1.562000.weights
+=> loading checkpoint 'CIFAR100_res/models/checkpoint_CIFAR100_resnet50_0_100_0.0_RobustnessDandR_eps1=7.8,_eps2=2.9__7552_600_1.562500.weights'
+=> loaded checkpoint 'CIFAR100_res/models/checkpoint_CIFAR100_resnet50_0_100_0.0_RobustnessDandR_eps1=7.8,_eps2=2.9__7552_600_1.562500.weights' (epoch -1)
+time taken for 100 iterations, per-iteration is:  263.12036514282227 ms
+num:  157
+5, 600, 4.6388, 230.0035, 1.562, 9.375, 4.5193, 2.190, 263.12036514282227 
+Finding  CIFAR100_res/models/checkpoint_CIFAR100_resnet50_0_100_0.0_RobustnessDandR_eps1=7.8,_eps2=2.9__7552_700_0.000000.weights
+=> loading checkpoint 'CIFAR100_res/models/checkpoint_CIFAR100_resnet50_0_100_0.0_RobustnessDandR_eps1=7.8,_eps2=2.9__7552_700_0.000000.weights'
+=> loaded checkpoint 'CIFAR100_res/models/checkpoint_CIFAR100_resnet50_0_100_0.0_RobustnessDandR_eps1=7.8,_eps2=2.9__7552_700_0.000000.weights' (epoch -1)
+time taken for 100 iterations, per-iteration is:  263.50822925567627 ms
+num:  157
+6, 700, 4.5498, 240.1047, 0.000, 4.688, 4.6867, 1.890, 263.50822925567627 
+Finding  CIFAR100_res/models/checkpoint_CIFAR100_resnet50_0_100_0.0_RobustnessDandR_eps1=7.8,_eps2=2.9__7552_800_1.562000.weights
+=> loading checkpoint 'CIFAR100_res/models/checkpoint_CIFAR100_resnet50_0_100_0.0_RobustnessDandR_eps1=7.8,_eps2=2.9__7552_800_1.562500.weights'
+=> loaded checkpoint 'CIFAR100_res/models/checkpoint_CIFAR100_resnet50_0_100_0.0_RobustnessDandR_eps1=7.8,_eps2=2.9__7552_800_1.562500.weights' (epoch -1)
+time taken for 100 iterations, per-iteration is:  263.0297613143921 ms
+num:  157
+7, 800, 4.5134, 160.6641, 1.562, 6.250, 4.5097, 2.060, 263.0297613143921 
+Finding  CIFAR100_res/models/checkpoint_CIFAR100_resnet50_0_100_0.0_RobustnessDandR_eps1=7.8,_eps2=2.9__7552_900_1.562000.weights
+=> loading checkpoint 'CIFAR100_res/models/checkpoint_CIFAR100_resnet50_0_100_0.0_RobustnessDandR_eps1=7.8,_eps2=2.9__7552_900_1.562500.weights'
+=> loaded checkpoint 'CIFAR100_res/models/checkpoint_CIFAR100_resnet50_0_100_0.0_RobustnessDandR_eps1=7.8,_eps2=2.9__7552_900_1.562500.weights' (epoch -1)
+time taken for 100 iterations, per-iteration is:  263.71970415115356 ms
+num:  157
+8, 900, 4.4343, 219.0083, 1.562, 7.812, 4.4642, 2.540, 263.71970415115356 
+Finding  CIFAR100_res/models/checkpoint_CIFAR100_resnet50_0_100_0.0_RobustnessDandR_eps1=7.8,_eps2=2.9__7552_1000_3.125000.weights
+=> loading checkpoint 'CIFAR100_res/models/checkpoint_CIFAR100_resnet50_0_100_0.0_RobustnessDandR_eps1=7.8,_eps2=2.9__7552_1000_3.125000.weights'
+=> loaded checkpoint 'CIFAR100_res/models/checkpoint_CIFAR100_resnet50_0_100_0.0_RobustnessDandR_eps1=7.8,_eps2=2.9__7552_1000_3.125000.weights' (epoch -1)
+time taken for 100 iterations, per-iteration is:  263.8693428039551 ms
+num:  157
+9, 1000, 4.4539, 208.6317, 3.125, 9.375, 4.4380, 2.360, 263.8693428039551 
+Finding  CIFAR100_res/models/checkpoint_CIFAR100_resnet50_0_100_0.0_RobustnessDandR_eps1=7.8,_eps2=2.9__7552_1100_3.125000.weights
+=> loading checkpoint 'CIFAR100_res/models/checkpoint_CIFAR100_resnet50_0_100_0.0_RobustnessDandR_eps1=7.8,_eps2=2.9__7552_1100_3.125000.weights'
+=> loaded checkpoint 'CIFAR100_res/models/checkpoint_CIFAR100_resnet50_0_100_0.0_RobustnessDandR_eps1=7.8,_eps2=2.9__7552_1100_3.125000.weights' (epoch -1)
+time taken for 100 iterations, per-iteration is:  263.5985016822815 ms
+num:  157
+10, 1100, 4.3464, 193.3959, 3.125, 17.188, 4.4267, 2.270, 263.5985016822815 
+Finding  CIFAR100_res/models/checkpoint_CIFAR100_resnet50_0_100_0.0_RobustnessDandR_eps1=7.8,_eps2=2.9__7552_1200_1.562000.weights
+=> loading checkpoint 'CIFAR100_res/models/checkpoint_CIFAR100_resnet50_0_100_0.0_RobustnessDandR_eps1=7.8,_eps2=2.9__7552_1200_1.562500.weights'
+=> loaded checkpoint 'CIFAR100_res/models/checkpoint_CIFAR100_resnet50_0_100_0.0_RobustnessDandR_eps1=7.8,_eps2=2.9__7552_1200_1.562500.weights' (epoch -1)
+time taken for 100 iterations, per-iteration is:  263.2518720626831 ms
+num:  157
+11, 1200, 4.3791, 201.9162, 1.562, 10.938, 4.5171, 2.570, 263.2518720626831 
+Finding  CIFAR100_res/models/checkpoint_CIFAR100_resnet50_0_100_0.0_RobustnessDandR_eps1=7.8,_eps2=2.9__7552_1300_0.000000.weights
+=> loading checkpoint 'CIFAR100_res/models/checkpoint_CIFAR100_resnet50_0_100_0.0_RobustnessDandR_eps1=7.8,_eps2=2.9__7552_1300_0.000000.weights'
+=> loaded checkpoint 'CIFAR100_res/models/checkpoint_CIFAR100_resnet50_0_100_0.0_RobustnessDandR_eps1=7.8,_eps2=2.9__7552_1300_0.000000.weights' (epoch -1)
+time taken for 100 iterations, per-iteration is:  263.26234579086304 ms
+num:  157
+12, 1300, 4.5328, 227.5102, 0.000, 3.125, 4.3936, 3.080, 263.26234579086304 
+Finding  CIFAR100_res/models/checkpoint_CIFAR100_resnet50_0_100_0.0_RobustnessDandR_eps1=7.8,_eps2=2.9__7552_1400_4.688000.weights
+=> no checkpoint found at ''

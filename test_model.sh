@@ -1,0 +1,21 @@
+#!/bin/bash
+
+dataset=$1
+network=$2
+prune_per_iter=$3
+frequency=$4
+dl2_weight=$5
+dl2_constr=$6 # RobustnessDandR(eps1=7.8, eps2=2.9)         
+#attack=$7
+log_file=$7
+log_frequency=1
+batch_size=$8
+starting_line=$9
+#python3 test_models.py --dataset=CIFAR100 --model=resnet50  --tensorboard=True --pruning_config="./configs/CIFAR100_350_100.json" --constraint="RobustnessG(eps=0.3, delta=0.52)" --print-after-epoch=0 --dl2-weight=0.05 --batch-size=64  --name="CIFAR100_resnet50_64_final" --checkpoint_folder="CIFAR100_resnet50_64" --log_file process_output/textfiles/log_CIFAR100_resnet50_350_100_0.05_RobustnessG_eps=0.3,_delta=0.52__64.txt
+
+config=$"./configs/${dataset}_${prune_per_iter}_${frequency}.json"
+
+python3 test_models.py --dataset=$dataset --model=$network --tensorboard=True  --pruning_config=$config --constraint="${dl2_constr}" --dl2-weight=$dl2_weight  --batch-size=$batch_size --name="CIFAR100_res_64_final" --checkpoint_folder="CIFAR100_res_64" --log_file=$log_file  --starting_line=$starting_line
+
+
+#./test_model.sh CIFAR100 resnet50 350 100 0.05 "RobustnessG(eps=0.3, delta=0.52)" "process_output/textfiles/log_CIFAR100_resnet50_350_100_0.05_RobustnessG_eps=0.3,_delta=0.52__64.txt" 64

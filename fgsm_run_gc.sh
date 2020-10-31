@@ -15,11 +15,11 @@ config=$"./configs/${dataset}_${prune_per_iter}_${frequency}.json"
 
 cp CIFAR100/models/checkpoint_CIFAR100_resnet50_100_100_0.0_RobustnessDandR_eps1=7.8,_eps2=2.9__7552_107374182397200_100.000000.weights CIFAR100/cifar100_resnet50_best.weights
 
-python3 main_gc.py --dataset=$dataset --model=$network --pruning=True --tensorboard=True --log-interval=$log_frequency --pruning_config=$config --constraint="${dl2_constr}" --print-after-epoch=0 --dl2-weight=$dl2_weight1 --delay=0 --epochs=1000 --adv-after-epoch=0 --batch-size=$batch_size --load_model="./CIFAR100/cifar100_resnet50_best.weights" --name="CIFAR100_resnet50_64" #"./CIFAR100_resnet50_16/batch128.weights" --name="CIFAR100_resnet50_16"
+python3 main_gc.py --dataset=$dataset --model=$network --pruning=True --tensorboard=True --log-interval=$log_frequency --pruning_config=$config --constraint="${dl2_constr}" --print-after-epoch=0 --dl2-weight=$dl2_weight1 --delay=0 --epochs=1000 --adv-after-epoch=0 --batch-size=$batch_size --load_model="./CIFAR100_res/best_model.weights" --name="CIFAR100_res_64" #"./CIFAR100_resnet50_16/batch128.weights" --name="CIFAR100_resnet50_16"
 
 cp CIFAR100/models/checkpoint_CIFAR100_resnet50_100_100_0.0_RobustnessDandR_eps1=7.8,_eps2=2.9__7552_107374182397200_100.000000.weights CIFAR100/cifar100_resnet50_best.weights
 
-python3 main_gc.py --dataset=$dataset --model=$network --pruning=True --tensorboard=True --log-interval=$log_frequency --pruning_config=$config --constraint="${dl2_constr}" --print-after-epoch=0 --dl2-weight=$dl2_weight2 --delay=0 --epochs=1000 --adv-after-epoch=0 --batch-size=$batch_size --load_model="./CIFAR100/cifar100_resnet50_best.weights" --name="CIFAR100_resnet50_64" #"./CIFAR100_resnet50_16/batch128.weights" --name="CIFAR100_resnet50_16"
+python3 main_gc.py --dataset=$dataset --model=$network --pruning=True --tensorboard=True --log-interval=$log_frequency --pruning_config=$config --constraint="${dl2_constr}" --print-after-epoch=0 --dl2-weight=$dl2_weight2 --delay=0 --epochs=1000 --adv-after-epoch=0 --batch-size=$batch_size --load_model="./CIFAR100_res/best_model.weights" --name="CIFAR100_res_64" #"./CIFAR100_resnet50_16/batch128.weights" --name="CIFAR100_resnet50_16"
 
 dl2_modified=${dl2_constr//[() ]/_}
 

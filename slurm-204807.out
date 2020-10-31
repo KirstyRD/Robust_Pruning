@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "test_models.py", line 803, in <module>
+    main()
+  File "test_models.py", line 738, in main
+    for data_test in test_loader:
+UnboundLocalError: local variable 'test_loader' referenced before assignment
+Files already downloaded and verified
+CIFAR100_resnet50_350_100_0.0_RobustnessG_eps=0.3,_delta=0.52__32
+test_models.py --dataset=CIFAR100 --model=resnet50 --tensorboard=True --pruning_config=./configs/CIFAR100_350_100.json --constraint=RobustnessG(eps=0.3, delta=0.52) --dl2-weight=0.0 --batch-size=32 --name=CIFAR100_res_64_final --checkpoint_folder=CIFAR100_res_64 --log_file=process_output/text/log_CIFAR100_resnet50_350_100_0.0_RobustnessG_eps=0.3,_delta=0.52__64.txt
+print_iter, neuron_units, train_loss, train_dl2_loss, train_top1, train_top5, train_cons, train_time, test_loss, test_dl2_loss, test_acc, test_constr, adv_acc1, adv_acc2, test_time, inference_time
+Finding  CIFAR100_res_64/models/checkpoint_CIFAR100_resnet50_350_100_0.0_RobustnessG_eps=0.3,_delta=0.52__7552_0_100.000000.weights

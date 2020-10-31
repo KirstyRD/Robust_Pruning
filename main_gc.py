@@ -1109,7 +1109,7 @@ def main():
         train_writer.add_graph(model, dummy_input)
 
     #*k print
-    print_iter=0
+    print_iter=-1
     print("epoch, neuron_units, loss, dl2_loss, top1, top5, dl2_p_acc, dl2_constraint_acc")
     for epoch in range(1, args.epochs + 1):
         if args.distributed:

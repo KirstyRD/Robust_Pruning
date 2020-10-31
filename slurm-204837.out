@@ -1,0 +1,22 @@
+Files already downloaded and verified
+CIFAR100_resnet50_350_100_0.05_RobustnessG_eps=0.3,_delta=0.52__32
+test_models.py --dataset=CIFAR100 --model=resnet50 --tensorboard=True --pruning_config=./configs/CIFAR100_350_100.json --constraint=RobustnessG(eps=0.3, delta=0.52) --dl2-weight=0.05 --batch-size=32 --name=CIFAR100_res_64_final --checkpoint_folder=CIFAR100_res_64 --log_file=process_output/text/log_CIFAR100_resnet50_350_100_0.05_RobustnessG_eps=0.3,_delta=0.52__64.txt
+print_iter, neuron_units, train_loss, train_dl2_loss, train_top1, train_top5, train_cons, train_time, test_loss, test_dl2_loss, test_acc, test_constr, adv_acc1, adv_acc2, inf_time, test_time
+Finding  CIFAR100_res_64/models/checkpoint_CIFAR100_resnet50_350_100_0.05_RobustnessG_eps=0.3,_delta=0.52__7552_0_100.000000.weights
+0, 7552, 0.0027, 0.5097, 100.000, 100.000, 0.094, 24.867801666259766, 0.0336, 0.0239, 0.769, 0.125, 0.1458, 0.0880, 65.5112, 3980.1607863903046 
+Finding  CIFAR100_res_64/models/checkpoint_CIFAR100_resnet50_350_100_0.05_RobustnessG_eps=0.3,_delta=0.52__7552_100_100.000000.weights
+1, 7552, 0.0264, 0.0466, 100.000, 100.000, 0.656, 492.8962767124176, 0.0431, 0.0014, 0.679, 0.615, 0.1165, 0.1090, 47.5075, 7928.503060102463 
+Finding  CIFAR100_res_64/models/checkpoint_CIFAR100_resnet50_350_100_0.05_RobustnessG_eps=0.3,_delta=0.52__7202_200_100.000000.weights
+2, 7202, 0.0224, 0.0049, 100.000, 100.000, 0.906, 963.0919511318207, 0.0553, 0.0002, 0.584, 0.918, 0.0460, 0.0455, 47.5573, 11857.872108221054 
+Finding  CIFAR100_res_64/models/checkpoint_CIFAR100_resnet50_350_100_0.05_RobustnessG_eps=0.3,_delta=0.52__6852_300_100.000000.weights
+3, 6852, 0.0191, 0.0026, 100.000, 100.000, 0.938, 1435.626795053482, 0.0503, 0.0002, 0.625, 0.898, 0.0400, 0.0297, 47.6796, 15800.467560768127 
+Finding  CIFAR100_res_64/models/checkpoint_CIFAR100_resnet50_350_100_0.05_RobustnessG_eps=0.3,_delta=0.52__6502_400_100.000000.weights
+4, 6502, 0.0053, 0.0003, 100.000, 100.000, 0.969, 1909.5428516864777, 0.0516, 0.0001, 0.618, 0.949, 0.0452, 0.0103, 47.5210, 19735.328915834427 
+Finding  CIFAR100_res_64/models/checkpoint_CIFAR100_resnet50_350_100_0.05_RobustnessG_eps=0.3,_delta=0.52__6152_500_100.000000.weights
+5, 6152, 0.0154, 0.0000, 100.000, 100.000, 1.000, 2385.927149772644, 0.0535, 0.0001, 0.601, 0.965, 0.0108, 0.0153, 47.5661, 23670.061914920807 
+Finding  CIFAR100_res_64/models/checkpoint_CIFAR100_resnet50_350_100_0.05_RobustnessG_eps=0.3,_delta=0.52__5802_600_100.000000.weights
+6, 5802, 0.0121, 0.0019, 100.000, 100.000, 0.969, 2863.720796108246, 0.0594, 0.0000, 0.557, 0.973, 0.0219, 0.0000, 47.5087, 27599.022361278534 
+Finding  CIFAR100_res_64/models/checkpoint_CIFAR100_resnet50_350_100_0.05_RobustnessG_eps=0.3,_delta=0.52__5452_700_96.875000.weights
+7, 5452, 0.0504, 0.0081, 96.875, 100.000, 0.844, 3343.8954486846924, 0.0501, 0.0001, 0.617, 0.956, 0.0376, 0.0103, 47.5216, 31538.97857260704 
+Finding  CIFAR100_res_64/models/checkpoint_CIFAR100_resnet50_350_100_0.05_RobustnessG_eps=0.3,_delta=0.52__4752_800_98.438000.weights
+=> no checkpoint found at ''

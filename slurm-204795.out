@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "validate.py", line 777, in <module>
+    main()
+  File "validate.py", line 758, in main
+    top1, loss = validate(args, test_loader_constr, model, device, criterion)    
+  File "validate.py", line 114, in validate
+    inf_time.update(time_1_input)
+NameError: name 'time_1_input' is not defined
+Files already downloaded and verified
+Ignoring network_output argument, using prob and logprob to obtain KL divergence
+CIFAR100_resnet50_0_100_0.0_RobustnessDandR_eps1=7.8,_eps2=2.9__64
+validate.py --dataset=CIFAR100 --model=resnet50 --tensorboard=True --pruning_config=./configs/CIFAR100_0_100.json --constraint=RobustnessDandR(eps1=7.8, eps2=2.9) --dl2-weight=0.0 --batch-size=64 --name=CIFAR100_res_valid --checkpoint_folder=CIFAR100_res --log_file=process_output/textfiles/log_CIFAR100_resnet50_0_100_0.0_RobustnessDandR_eps1=7.8,_eps2=2.9__64.txt --starting_line=50
+print_iter, train_iter, train_loss, train_dl2_loss, train_top1, train_top5,  test_loss,  test_acc, inf_time

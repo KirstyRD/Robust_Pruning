@@ -1,0 +1,4 @@
+  File "test_models.py", line 721
+    ettings['prune_per_iteration'], pruning_settings['frequency'], args.dl2_weight, args.constraint.replace(" ", "_").replace("(","_").replace(")","_"), y_params[i], y_iter[i], y_top1[i] )
+          ^
+SyntaxError: invalid syntax

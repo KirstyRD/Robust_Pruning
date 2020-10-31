@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "test_models.py", line 17, in <module>
+    from utils.utils import save_checkpoint, adjust_learning_rate, AverageMeter, accuracy, load_model_pytorch, dynamic_network_change_local, get_conv_sizes, connect_gates_with_parameters_for_flops
+  File "/home/kduncan/Pruning/utils/utils.py", line 144
+    def dynamic_network_change_local(model):
+      ^
+SyntaxError: invalid syntax

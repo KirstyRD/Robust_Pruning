@@ -82,7 +82,7 @@ def accuracy(output, target, topk=(1,)):
 
 
 def load_model_pytorch(model, load_model, model_name):
-    print("=> loading checkpoint '{}'".format(load_model))
+#    print("=> loading checkpoint '{}'".format(load_model))
     checkpoint = torch.load(load_model)
 
     if 'state_dict' in checkpoint.keys():
@@ -110,18 +110,18 @@ def load_model_pytorch(model, load_model, model_name):
         load_from = OrderedDict([(k.replace("features.", "features"), v) for k, v in load_from.items()])
         load_from = OrderedDict([(k.replace("classifier.", "classifier"), v) for k, v in load_from.items()])
 
-    if 1:
-        for ind, (key, item) in enumerate(model.state_dict().items()):
-            if ind > 10:
-                continue
-            print(key, model.state_dict()[key].shape)
-
-        print("*********")
-
-        for ind, (key, item) in enumerate(load_from.items()):
-            if ind > 10:
-                continue
-            print(key, load_from[key].shape)
+#    if 1:
+#        for ind, (key, item) in enumerate(model.state_dict().items()):
+#            if ind > 10:
+#                continue
+#            print(key, model.state_dict()[key].shape)##
+#
+#        print("*********")##
+#
+#        for ind, (key, item) in enumerate(load_from.items()):
+#            if ind > 10:
+#                continue
+#            print(key, load_from[key].shape)
 
     for key, item in model.state_dict().items():
         # if we add gate that is not in the saved file
@@ -134,11 +134,11 @@ def load_model_pytorch(model, load_model, model_name):
     model.load_state_dict(load_from, strict=True)
 
 
-    epoch_from = -1
-    if 'epoch' in checkpoint.keys():
-        epoch_from = checkpoint['epoch']
-    print("=> loaded checkpoint '{}' (epoch {})"
-          .format(load_model, epoch_from))
+    #epoch_from = -1
+    #if 'epoch' in checkpoint.keys():
+    #    epoch_from = checkpoint['epoch']
+    #print("=> loaded checkpoint '{}'"# (epoch {})"
+    #      .format(load_model))#, epoch_from))
 
 
 def dynamic_network_change_local(model):

@@ -1,0 +1,64 @@
+Traceback (most recent call last):
+  File "test_models.py", line 762, in <module>
+    main()
+  File "test_models.py", line 724, in main
+    precision_dl2, constr_acc, test_loss, test_loss_dl2 = test_constraints(args, oracle, test_loader_constr, model, device)
+  File "test_models.py", line 137, in test_constraints
+    z_batches = oracle.general_attack(x_batches, y_batches, domains, num_restarts=1, num_iters=args.num_iters, args=args)
+  File "/home/kduncan/Pruning/oracles.py", line 48, in general_attack
+    neg_losses, pos_losses, sat, z_inputs = self.constraint.loss(x_batches, y_batches, z_batches, args)
+  File "/home/kduncan/Pruning/constraints.py", line 45, in loss
+    z_inp, z_out = self.eval_z(z_batches)
+  File "/home/kduncan/Pruning/constraints.py", line 35, in eval_z
+    z_outputs = [self.net(z_input) for z_input in z_inputs]
+  File "/home/kduncan/Pruning/constraints.py", line 35, in <listcomp>
+    z_outputs = [self.net(z_input) for z_input in z_inputs]
+  File "/home/kduncan/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/kduncan/Pruning/models/resnet.py", line 191, in forward
+    x = self.layer1(x)
+  File "/home/kduncan/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/kduncan/.local/lib/python3.6/site-packages/torch/nn/modules/container.py", line 92, in forward
+    input = module(input)
+  File "/home/kduncan/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/kduncan/Pruning/models/resnet.py", line 108, in forward
+    out = self.bn3(out)
+  File "/home/kduncan/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/kduncan/.local/lib/python3.6/site-packages/torch/nn/modules/batchnorm.py", line 81, in forward
+    exponential_average_factor, self.eps)
+  File "/home/kduncan/.local/lib/python3.6/site-packages/torch/nn/functional.py", line 1656, in batch_norm
+    training, momentum, eps, torch.backends.cudnn.enabled
+RuntimeError: CUDA out of memory. Tried to allocate 64.00 MiB (GPU 0; 4.63 GiB total capacity; 4.21 GiB already allocated; 49.94 MiB free; 49.54 MiB cached)
+Files already downloaded and verified
+CIFAR100_resnet50_350_100_0.05_RobustnessG_eps=0.3,_delta=0.52__64
+test_models.py --dataset=CIFAR100 --model=resnet50 --tensorboard=True --pruning_config=./configs/CIFAR100_350_100.json --constraint=RobustnessG(eps=0.3, delta=0.52) --dl2-weight=0.05 --batch-size=64 --name=CIFAR100_resnet50_64_final --checkpoint_folder=CIFAR100_resnet50_64 --log_file=process_output/textfiles/log_CIFAR100_resnet50_350_100_0.05_RobustnessG_eps=0.3,_delta=0.52__64.txt
+print_iter, neuron_units, train_loss, train_dl2_loss, train_top1, train_top5, train_cons, train_time, test_loss, test_dl2_loss, test_acc, test_constr, adv_acc1, adv_acc2, test_time
+Finding  CIFAR100_resnet50_64/models/checkpoint_CIFAR100_resnet50_350_100_0.05_RobustnessG_eps=0.3,_delta=0.52__7552_100_82.812000.weights
+=> loading checkpoint 'CIFAR100_resnet50_64/models/checkpoint_CIFAR100_resnet50_350_100_0.05_RobustnessG_eps=0.3,_delta=0.52__7552_100_82.812500.weights'
+conv1.weight torch.Size([64, 3, 3, 3])
+bn1.weight torch.Size([64])
+bn1.bias torch.Size([64])
+bn1.running_mean torch.Size([64])
+bn1.running_var torch.Size([64])
+bn1.num_batches_tracked torch.Size([])
+layer1.0.conv1.weight torch.Size([64, 64, 1, 1])
+layer1.0.bn1.weight torch.Size([64])
+layer1.0.bn1.bias torch.Size([64])
+layer1.0.bn1.running_mean torch.Size([64])
+layer1.0.bn1.running_var torch.Size([64])
+*********
+conv1.weight torch.Size([64, 3, 3, 3])
+bn1.weight torch.Size([64])
+bn1.bias torch.Size([64])
+bn1.running_mean torch.Size([64])
+bn1.running_var torch.Size([64])
+bn1.num_batches_tracked torch.Size([])
+layer1.0.conv1.weight torch.Size([64, 64, 1, 1])
+layer1.0.bn1.weight torch.Size([64])
+layer1.0.bn1.bias torch.Size([64])
+layer1.0.bn1.running_mean torch.Size([64])
+layer1.0.bn1.running_var torch.Size([64])
+=> loaded checkpoint 'CIFAR100_resnet50_64/models/checkpoint_CIFAR100_resnet50_350_100_0.05_RobustnessG_eps=0.3,_delta=0.52__7552_100_82.812500.weights' (epoch -1)
