@@ -151,6 +151,8 @@ def train(args, model, device, train_loader, optimizer, epoch, criterion, oracle
             
             if oracle.constraint.n_gvars > 0:
                 domains = oracle.constraint.get_domains(x_batches, y_batches)
+                print("domains************************************************")
+                print(domains)
                 z_batches = oracle.general_attack(x_batches, y_batches, domains, num_restarts=1, num_iters=args.num_iters, args=args)
                 _, dl2_batch_loss, constr_acc = oracle.evaluate(x_batches, y_batches, z_batches, args)
             else:

@@ -2,10 +2,13 @@ import sys
 
 lines = open(sys.argv[1], 'r').readlines()
 search1 = 'epoch, neuron_units,'
+search2 = 'print_iter, neuron_units,'
 
 copy = 0
 for i, line in enumerate(lines):
     if search1 in line:
+        break
+    if search2 in line:
         break
 
 if i < len(lines) - 1:

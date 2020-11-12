@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "test_models.py", line 821, in <module>
+    main()
+  File "test_models.py", line 753, in main
+    print(adversarial_images.shape())
+AttributeError: 'list' object has no attribute 'shape'
+Files already downloaded and verified
+CIFAR100_resnet50_350_100_0.2_RobustnessG_eps=0.3,_delta=0.52__32
+test_models.py --dataset=CIFAR100 --model=resnet50 --tensorboard=True --pruning_config=./configs/CIFAR100_350_100.json --constraint=RobustnessG(eps=0.3, delta=0.52) --dl2-weight=0.2 --batch-size=32 --name=CIFAR100_res_64_advset --checkpoint_folder=CIFAR100_res_64 --log_file=process_output/text/log_CIFAR100_resnet50_350_100_0.2_RobustnessG_eps=0.3,_delta=0.52__64.txt --starting_line=0
+print_iter, neuron_units, train_loss, train_dl2_loss, train_top1, train_top5, train_cons, train_time, test_loss, test_dl2_loss, test_acc, test_constr, adv_acc1, adv_acc2, inf_time, test_time

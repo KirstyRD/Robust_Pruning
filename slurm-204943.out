@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "remove_header.py", line 3, in <module>
+    lines = open(sys.argv[1], 'r').readlines()
+FileNotFoundError: [Errno 2] No such file or directory: '../CIFAR100_res_64/log_CIFAR100_resnet50_350_100_0.02_RobustnessG_eps=0.3,_delta=0.52__.txt'

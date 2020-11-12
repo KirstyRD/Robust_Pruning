@@ -45,6 +45,7 @@ from sklearn.metrics import confusion_matrix
 
 import time
 import gc
+import torchattacks
 #++++++++end
 
 # code is based on Pytorch example for imagenet
@@ -119,10 +120,10 @@ def test_constraints(args, oracle, test_loader_constr, model, device):
     test_dl2_loss = 0
     correct, constr, num_steps, pgd_ok = 0, 0, 0, 0
 
-    count = 0
+    #count = 0
     for data, target in test_loader_constr:
-        cout += 1
-        print("test: ", count)
+        #count += 1
+        #print("test: ", count)
         num_steps += 1
         x_batch, y_batch = data.to(device), target.to(device)
         n_batch = int(x_batch.size()[0])
@@ -182,10 +183,10 @@ def fgsm_test( model, device, test_loader, epsilon ):
     length_testset = 0
 
     # Loop over all examples in test set
-    count = 0
+    #count = 0
     for data, target in test_loader:
-        count += 1
-        print("FGSM: ", count)
+        #count += 1
+        #print("FGSM: ", count)
         # Send the data and label to the device
         data, target = data.to(device), target.to(device)
         # Set requires_grad attribute of tensor. Important for Attack
@@ -735,39 +736,44 @@ def main():
             continue
 
         model.eval()
-        
-        #inference time
-        inf_time = 0
-        count = 0
-        with torch.no_grad():
+
+        # adversarial attack
+        if j==0:
+            count = 0
+            adversarial_images = []
+            labels = []
             for data_test in test_loader_constr:
+                #print(count)
                 count += 1
-                print("time: ", count)
                 data, target = data_test
-                data = data.to(device)
-
-                #if args.get_inference_time:
-                iterations_get_inference_time = 100
-                start_get_inference_time = time.time()
-                for it in range(iterations_get_inference_time):
-                    output = model(data)
-                end_get_inference_time = time.time()
-                #print("time taken for %d iterations, per-iteration is: "%(iterations_get_inference_time), (end_get_inference_time - start_get_inferencetime)*1000.0/float(iterations_get_inference_time), "ms")
+                atk = torchattacks.PGD(model, eps=1/255, alpha=2/255, steps=2)
+                adversarial_images.append(atk(data,target))
+                labels.append(target)
                 
-                inf_time = (end_get_inference_time - start_get_inference_time)*1000.0/float(iterations_get_inference_time)
-                continue
- 
-        #avg_inf_time = inf_time/
+                    
 
-        precision_dl2, constr_acc, test_loss, test_loss_dl2 = test_constraints(args, oracle, test_loader_constr, model, device)
-        
-        epsilons = [ .1, .2]
-        accuracies = []
-
-        # Run test for each epsilon
-        for e in epsilons:
-            acc, _ = fgsm_test(model, device, test_loader_adv, e)
-            accuracies.append(acc)
+            # test attack set
+        all_adv = 0
+        correct_adv = 0
+        for adv_count in range(len(adversarial_images)):
+            data = adversarial_images[adv_count]
+            target = labels[adv_count]
+            data, target = data.to(device), target.to(device)
+            
+            gc.collect()
+            torch.cuda.empty_cache()
+            output = model(data)
+            
+            _, pred = torch.max(output, 1)
+            #print(pred)
+            #print(target)
+            for batch_item in range(len(pred)):
+                all_adv += 1
+                if pred[batch_item].item() == target[batch_item].item():
+                    correct_adv += 1
+            
+        correct_adv = correct_adv / all_adv
+            
             
         runtime = time.time() - starttime
         print('{0}, '
@@ -778,22 +784,16 @@ def main():
               '{train_top5:.3f}, '
               '{train_cons:.3f}, '
               '{train_time}, '
-              '{test_loss:.4f}, '
-              '{test_dl2_loss:.4f}, '
-              '{test_acc:.3f}, '
-              '{test_constr:.3f}, '
-              '{adv_acc1:.4f}, '
-              '{adv_acc2:.4f}, '
-              '{inf_time:.4f}, '
+              '{robust:.4f}, '
               '{test_time} '
               .format(
                   i, y_params[i] , train_loss=y_loss[i], train_dl2_loss=y_dl2_loss[i],
                   train_top1=y_top1[i], train_top5=y_top5[i], train_cons=y_constr[i], train_time=y_time[i],
                   #precision_dl2, constr_acc, test_loss_dl2
-                  test_loss=test_loss , test_dl2_loss =test_loss_dl2 , test_acc =precision_dl2 , test_constr =constr_acc ,
-                  adv_acc1=accuracies[0], adv_acc2=accuracies[1], #adv_acc3=accuracies[2],
+                  #test_loss=test_loss , test_dl2_loss =test_loss_dl2 , test_acc =precision_dl2 , test_constr =constr_acc ,
+                  #adv_acc1=accuracies[0], adv_acc2=accuracies[1], #adv_acc3=accuracies[2],
                   #adv_acc4=accuracies[3], adv_acc5=accuracies[4], adv_acc6=accuracies[5],
-                  inf_time = inf_time, test_time=runtime
+                  robust=correct_adv , test_time=runtime
               ))
         
         

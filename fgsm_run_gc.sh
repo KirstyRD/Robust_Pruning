@@ -5,30 +5,17 @@ network=$2
 prune_per_iter=$3
 frequency=$4
 dl2_weight1=$5
-dl2_weight2=$6
-dl2_constr=$7 # RobustnessDandR(eps1=7.8, eps2=2.9)         
+#dl2_weight2=$6
+dl2_constr=$6 # RobustnessDandR(eps1=7.8, eps2=2.9)         
 #attack=$7
 log_frequency=$4
-batch_size=$8
+batch_size=$7
 
 config=$"./configs/${dataset}_${prune_per_iter}_${frequency}.json"
+folder=$"CIFAR100_res_64"
 
-cp CIFAR100/models/checkpoint_CIFAR100_resnet50_100_100_0.0_RobustnessDandR_eps1=7.8,_eps2=2.9__7552_107374182397200_100.000000.weights CIFAR100/cifar100_resnet50_best.weights
-
-python3 main_gc.py --dataset=$dataset --model=$network --pruning=True --tensorboard=True --log-interval=$log_frequency --pruning_config=$config --constraint="${dl2_constr}" --print-after-epoch=0 --dl2-weight=$dl2_weight1 --delay=0 --epochs=1000 --adv-after-epoch=0 --batch-size=$batch_size --load_model="./CIFAR100_res/best_model.weights" --name="CIFAR100_res_64" #"./CIFAR100_resnet50_16/batch128.weights" --name="CIFAR100_resnet50_16"
-
-cp CIFAR100/models/checkpoint_CIFAR100_resnet50_100_100_0.0_RobustnessDandR_eps1=7.8,_eps2=2.9__7552_107374182397200_100.000000.weights CIFAR100/cifar100_resnet50_best.weights
-
-python3 main_gc.py --dataset=$dataset --model=$network --pruning=True --tensorboard=True --log-interval=$log_frequency --pruning_config=$config --constraint="${dl2_constr}" --print-after-epoch=0 --dl2-weight=$dl2_weight2 --delay=0 --epochs=1000 --adv-after-epoch=0 --batch-size=$batch_size --load_model="./CIFAR100_res/best_model.weights" --name="CIFAR100_res_64" #"./CIFAR100_resnet50_16/batch128.weights" --name="CIFAR100_resnet50_16"
-
-dl2_modified=${dl2_constr//[() ]/_}
+python3 main_gc.py --dataset=$dataset --model=$network --pruning=True --tensorboard=True --log-interval=$log_frequency --pruning_config=$config --constraint="${dl2_constr}" --print-after-epoch=0 --dl2-weight=$dl2_weight1 --delay=0 --epochs=1000 --adv-after-epoch=0 --batch-size=$batch_size --load_model="./CIFAR100_res/best_model.weights" --name=$folder
 
 cd process_output
 
-python3 remove_header.py ../CIFAR100_resnet50_128/log_${dataset}_${network}_${prune_per_iter}_${frequency}_${dl2_weight1}_${dl2_modified}_FGSM.txt text
-files/${dataset}_${network}_${prune_per_iter}_${frequency}_${dl2_weight1}_${dl2_modified}_FGSM.txt
-
-
-dl2_modified=${dl2_constr//[() ]/_}
-
-python3 remove_header.py ../CIFAR100_resnet50_128/log_${dataset}_${network}_${prune_per_iter}_${frequency}_${dl2_weight2}_${dl2_modified}_FGSM.txt textfiles/${dataset}_${network}_${prune_per_iter}_${frequency}_${dl2_weight2}_${dl2_modified}_FGSM.txt
+python3 remove_header.py ../${folder}/log_${dataset}_${network}_$3_$4_$5_RobustnessG_eps=0.3,_delta=0.52__$8.txt log_${dataset}_${network}_$3_$4_$5_RobustnessG_eps=0.3,_delta=0.52__$8.txt
