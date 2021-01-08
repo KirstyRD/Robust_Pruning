@@ -138,7 +138,7 @@ def test_constraints(args, oracle, test_loader_constr, model, device):
 #        if size0 > 0:
         if oracle.constraint.n_gvars > 0:
             domains = oracle.constraint.get_domains(x_batches, y_batches)
-            z_batches = oracle.general_attack(x_batches, y_batches, domains, num_restarts=1, num_iters=args.num_iters, args=args)
+            z_batches = oracle.general_attack(x_batches, y_batches, domains, num_restarts=args.restarts, num_iters=args.num_iters, args=args)
             _, dl2_batch_loss, constr_acc = oracle.evaluate(x_batches, y_batches, z_batches, args)
         else:
             _, dl2_batch_loss, constr_acc = oracle.evaluate(x_batches, y_batches, None, args)
@@ -450,6 +450,8 @@ def main():
                         help='Folder containing pruned model checkpoints')
     parser.add_argument('--starting_line', default=0, type=int,
                         help='First line in input file to begin validation')
+    parser.add_argument('--restarts', default=1, type=int,
+                        help='How many times to sample Box')
 
     # ============================END pruning added
 

@@ -14,6 +14,7 @@ class Box:
         return np.clip(x, self.a, self.b)
 
     def sample(self):
+        #print((self.b - self.a) * np.random.random_sample(size=self.a.shape) + self.a)
         return (self.b - self.a) * np.random.random_sample(size=self.a.shape) + self.a
 
 class Segment:

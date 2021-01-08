@@ -1,8 +1,0 @@
-BzsTraceback (most recent call last):
-  File "main_6epsilons.py", line 10, in <module>
-    from torchvision import datasets, transforms
-ModuleNotFoundError: No module named 'torchvision'
-Traceback (most recent call last):
-  File "remove_header.py", line 3, in <module>
-    lines = open(sys.argv[1], 'r').readlines()
-FileNotFoundError: [Errno 2] No such file or directory: '../cuda/log_MNIST_lenet3_1_30_0.3_RobustnessDandR_eps1=7.8,_eps2=2.9__FGSM.txt'

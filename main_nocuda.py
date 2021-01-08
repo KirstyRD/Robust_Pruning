@@ -138,22 +138,21 @@ def train(args, model, device, train_loader, optimizer, epoch, criterion, oracle
         else:
             x_batches, y_batches = [], []
             k = n_batch // oracle.constraint.n_tvars
-            k = k // 2
-            #print("k")
-            #print(k)
+            #k = k // 2
             assert n_batch % oracle.constraint.n_tvars == 0, 'Batch size must be divisible by number of train variables!'
+            #print(k)
             for i in range(oracle.constraint.n_tvars):
                 x_batches.append(data[i:(i + k)])
                 y_batches.append(target[i:(i + k)])
+
             
             model.eval()
 
             
             if oracle.constraint.n_gvars > 0:
                 domains = oracle.constraint.get_domains(x_batches, y_batches)
-                print("domains************************************************")
-                print(domains)
-                z_batches = oracle.general_attack(x_batches, y_batches, domains, num_restarts=1, num_iters=args.num_iters, args=args)
+                #print(domains)
+                z_batches = oracle.general_attack(x_batches, y_batches, domains, num_restarts=args.num_restarts, num_iters=args.num_iters, args=args)
                 _, dl2_batch_loss, constr_acc = oracle.evaluate(x_batches, y_batches, z_batches, args)
             else:
                 _, dl2_batch_loss, constr_acc = oracle.evaluate(x_batches, y_batches, None, args)
@@ -688,6 +687,9 @@ def main():
 
     parser.add_argument('--compute_flops', default=True,  type=str2bool, nargs='?',
                         help='if True, will run dummy inference of batch 1 before training to get conv sizes')
+
+    parser.add_argument('--num-restarts', default=10, type=int,
+                        help='number of checks for constraint accuracy')
 
 
 

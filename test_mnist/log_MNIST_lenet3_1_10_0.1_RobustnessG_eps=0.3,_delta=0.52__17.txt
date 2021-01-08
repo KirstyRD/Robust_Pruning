@@ -1,0 +1,20 @@
+main_nocuda.py --dataset=MNIST --model=lenet3 --pruning=True --tensorboard=True --log-interval=1 --pruning_config=./configs/MNIST_1_1.json --constraint=RobustnessG(eps=0.3, delta=0.52) --print-after-epoch=0 --dl2-weight=0.1 --delay=0 --epochs=10 --adv-after-epoch=0 --batch-size=17 --load_model= --name=test_mnist
+pruning_engine.load_mask(): did not find mask file, will load nothing
+epoch, neuron_units, loss, dl2_loss, top1, top5, dl2_p_acc, dl2_constraint_acc
+n_batch :  17
+k
+17
+17
+[[<domains.Box object at 0x2aab345e1908>, <domains.Box object at 0x2aab339d4ef0>, <domains.Box object at 0x2aab311b8160>, <domains.Box object at 0x2aab311b8e10>, <domains.Box object at 0x2aab311b8198>, <domains.Box object at 0x2aab311b8438>, <domains.Box object at 0x2aab311b80b8>, <domains.Box object at 0x2aab311b80f0>, <domains.Box object at 0x2aab30568780>, <domains.Box object at 0x2aab194e4860>, <domains.Box object at 0x2aab194e4390>, <domains.Box object at 0x2aab194e4358>, <domains.Box object at 0x2aab311afef0>, <domains.Box object at 0x2aab311afe80>, <domains.Box object at 0x2aab311afe48>, <domains.Box object at 0x2aab311afe10>, <domains.Box object at 0x2aab311afdd8>]]
+1, 252, 2.3038, 0.0000, 11.765, 52.941, 0.000, 1.000, 0, 1.5717625617980957 
+n_batch :  17
+k
+17
+17
+[[<domains.Box object at 0x2aab311afa20>, <domains.Box object at 0x2aab311afa90>, <domains.Box object at 0x2aab311af9e8>, <domains.Box object at 0x2aab311af978>, <domains.Box object at 0x2aab311afd30>, <domains.Box object at 0x2aab311af8d0>, <domains.Box object at 0x2aab311afb00>, <domains.Box object at 0x2aab311afda0>, <domains.Box object at 0x2aab311af898>, <domains.Box object at 0x2aab311af940>, <domains.Box object at 0x2aab311af908>, <domains.Box object at 0x2aab311af9b0>, <domains.Box object at 0x2aab311af828>, <domains.Box object at 0x2aab311afac8>, <domains.Box object at 0x2aab311afa58>, <domains.Box object at 0x2aab311af7b8>, <domains.Box object at 0x2aab311af7f0>]]
+1, 252, 2.3008, 0.0000, 11.765, 58.824, 0.000, 1.000, 1, 2.7719123363494873 
+n_batch :  17
+k
+17
+17
+[[<domains.Box object at 0x2aab194e4358>, <domains.Box object at 0x2aab339d4ef0>, <domains.Box object at 0x2aab311afc88>, <domains.Box object at 0x2aab311afcc0>, <domains.Box object at 0x2aab311afd68>, <domains.Box object at 0x2aab311afef0>, <domains.Box object at 0x2aab311afe80>, <domains.Box object at 0x2aab311afe10>, <domains.Box object at 0x2aab311afc50>, <domains.Box object at 0x2aab311afb38>, <domains.Box object at 0x2aab311afbe0>, <domains.Box object at 0x2aab311afcf8>, <domains.Box object at 0x2aab311afb70>, <domains.Box object at 0x2aab311afc18>, <domains.Box object at 0x2aab311afba8>, <domains.Box object at 0x2aab311af860>, <domains.Box object at 0x2aab311afdd8>]]

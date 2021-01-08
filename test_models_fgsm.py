@@ -762,7 +762,7 @@ def main():
 
         precision_dl2, constr_acc, test_loss, test_loss_dl2 = test_constraints(args, oracle, test_loader_constr, model, device)
         
-        epsilons = [ .1, .2]
+        epsilons = [ .1, .2, .3]
         accuracies = []
 
         # Run test for each epsilon
@@ -785,6 +785,7 @@ def main():
               '{test_constr:.3f}, '
               '{adv_acc1:.4f}, '
               '{adv_acc2:.4f}, '
+              '{adv_acc3:.4f}, '
               '{inf_time:.4f}, '
               '{test_time} '
               .format(
@@ -792,7 +793,7 @@ def main():
                   train_top1=y_top1[i], train_top5=y_top5[i], train_cons=y_constr[i], train_time=y_time[i],
                   #precision_dl2, constr_acc, test_loss_dl2
                   test_loss=test_loss , test_dl2_loss =test_loss_dl2 , test_acc =precision_dl2 , test_constr =constr_acc ,
-                  adv_acc1=accuracies[0], adv_acc2=accuracies[1], #adv_acc3=accuracies[2],
+                  adv_acc1=accuracies[0], adv_acc2=accuracies[1], adv_acc3=accuracies[2],
                   #adv_acc4=accuracies[3], adv_acc5=accuracies[4], adv_acc6=accuracies[5],
                   inf_time = inf_time, test_time=runtime
               ))

@@ -1,0 +1,7 @@
+method 22
+pruned_neurons 0
+pruning_iterations_done 14
+neuron_units 252
+all_neuron_units 252
+threshold_now 0.0
+groups_total 252
